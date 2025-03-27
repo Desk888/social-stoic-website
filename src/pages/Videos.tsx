@@ -1,53 +1,67 @@
 
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import VideoCard from '@/components/ui/VideoCard';
 import { Link } from 'react-router-dom';
+import { extractYouTubeVideoId, getYouTubeEmbedUrl } from '@/lib/youtube';
+import { X } from 'lucide-react';
 
+// Real YouTube video data
 const videos = [
   {
     id: '1',
-    title: 'How to Approach Women With Confidence',
-    videoId: 'sample1',
-    thumbnail: 'https://www.youtube.com/watch?v=_Am8ItTeNoQ&t=45s',
+    title: 'How To Make Friends: From Strangers To Friends Fast',
+    videoUrl: 'https://www.youtube.com/watch?v=UMZkMjD3luQ',
   },
   {
     id: '2',
-    title: 'The Art of Natural Conversation',
-    videoId: 'sample2',
-    thumbnail: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=800&q=80',
+    title: 'How To Create REAL Social Confidence (Not Fake)',
+    videoUrl: 'https://www.youtube.com/watch?v=_Am8ItTeNoQ',
   },
   {
     id: '3',
-    title: 'Building Authentic Connections',
-    videoId: 'sample3',
-    thumbnail: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80',
+    title: 'The "Law of Reciprocity" in Social Skills',
+    videoUrl: 'https://www.youtube.com/watch?v=p-dwJvVTwpo',
   },
   {
     id: '4',
-    title: 'Overcoming Approach Anxiety',
-    videoId: 'sample4',
-    thumbnail: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80',
+    title: 'Overcome Approach Anxiety Forever (Powerful Mindset Shifts)',
+    videoUrl: 'https://www.youtube.com/watch?v=CXJIxHjM8a0',
   },
   {
     id: '5',
-    title: 'Mastering Non-Verbal Communication',
-    videoId: 'sample5',
-    thumbnail: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=800&q=80',
+    title: 'How To Have An ENGAGING Conversation With Anyone (Going Beyond Small Talk)',
+    videoUrl: 'https://www.youtube.com/watch?v=ImYT_pdMH7Q',
   },
   {
     id: '6',
-    title: 'First Date Success Strategies',
-    videoId: 'sample6',
-    thumbnail: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=800&q=80',
+    title: 'How To Break The Ice With Anyone: 3 Practical Tips',
+    videoUrl: 'https://www.youtube.com/watch?v=2TjnZKqJe9k',
   },
 ];
 
 const Videos = () => {
+  const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
+  
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  const openVideo = (videoUrl: string) => {
+    const videoId = extractYouTubeVideoId(videoUrl);
+    if (videoId) {
+      setSelectedVideo(videoId);
+      // Prevent body scrolling when modal is open
+      document.body.style.overflow = 'hidden';
+    }
+  };
+
+  const closeVideo = () => {
+    setSelectedVideo(null);
+    // Restore body scrolling
+    document.body.style.overflow = 'auto';
+  };
 
   return (
     <div className="min-h-screen bg-stoic-black text-white">
@@ -88,12 +102,12 @@ const Videos = () => {
             
             {/* Video Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {videos.map((video) => (
-                <div key={video.id} className="opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              {videos.map((video, index) => (
+                <div key={video.id} className="opacity-0 animate-fade-in" style={{ animationDelay: `${0.1 + index * 0.1}s` }}>
                   <VideoCard
                     title={video.title}
-                    videoId={video.videoId}
-                    thumbnail={video.thumbnail}
+                    videoUrl={video.videoUrl}
+                    onClick={() => openVideo(video.videoUrl)}
                   />
                 </div>
               ))}
@@ -133,9 +147,14 @@ const Videos = () => {
                     <Link to="/coaching" className="btn-primary">
                       Explore Coaching Options
                     </Link>
-                    <Link to="/https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" className="btn-secondary">
+                    <a 
+                      href="https://calendly.com/thesocialstoic/coachingapplicationcall" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="btn-secondary"
+                    >
                       Get a Free Consultation
-                    </Link>
+                    </a>
                   </div>
                 </div>
                 <div className="relative hidden md:block">
@@ -151,6 +170,28 @@ const Videos = () => {
           </div>
         </section>
       </main>
+      
+      {/* Video Modal */}
+      {selectedVideo && (
+        <div className="fixed inset-0 z-50 bg-black/80 flex items-center justify-center p-4">
+          <div className="relative w-full max-w-5xl aspect-video">
+            <button 
+              onClick={closeVideo}
+              className="absolute -top-12 right-0 text-white hover:text-stoic-green p-2 transition-colors"
+              aria-label="Close video"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <iframe
+              src={getYouTubeEmbedUrl(selectedVideo) + '?autoplay=1'}
+              title="YouTube video player"
+              className="w-full h-full rounded-lg"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      )}
       
       <Footer />
     </div>
