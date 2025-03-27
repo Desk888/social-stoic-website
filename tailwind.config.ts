@@ -34,9 +34,9 @@ export default {
 					gray: "#222222",
 					lightgray: "#888888",
 					green: {
-						DEFAULT: "#4A6741",
-						light: "#6A8D62",
-						dark: "#2A3A25",
+						DEFAULT: "#04B66C",
+						light: "#05D47D",
+						dark: "#039055",
 					},
 				},
 				primary: {
