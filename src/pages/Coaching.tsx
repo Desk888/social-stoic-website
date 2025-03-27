@@ -8,13 +8,13 @@ const coachingServices = [
   {
     id: 'in-person',
     title: '1-on-1 Coaching In-Person',
-    description: 'Personalized in-person sessions focused on developing social skills, confidence, and authentic connection with women in real-world settings.',
-    imageSrc: 'https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=800&q=80',
+    description: 'Personalised in-person sessions focused on developing social skills, confidence, and authentic connection with women in real-world settings.',
+    imageSrc: 'https://images.unsplash.com/photo-1507537362848-9c7e70b7b5c1?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     benefits: [
       'Direct feedback in real-time approach situations',
-      'Personalized strategy tailored to your personality and goals',
+      'Personalised strategy tailored to your personality and goals',
       'Practice in various social environments (bars, cafes, shopping centers)',
-      'Immediate corrections to body language, vocal tonality, and conversational habits',
+      'Immediate corrections to body language, vocal tonality, communication and more',
       'Build confidence through guided social interactions'
     ],
     duration: 'To be discussed.',
@@ -23,23 +23,22 @@ const coachingServices = [
     id: 'online',
     title: '1-on-1 Coaching Online',
     description: 'Remote coaching sessions tailored to your specific needs, helping you develop the mindset and skills needed for successful dating.',
-    imageSrc: 'https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=800&q=80',
+    imageSrc: 'https://plus.unsplash.com/premium_photo-1661766473438-0509d5f19ab8?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     benefits: [
       'Flexible scheduling from anywhere in the world',
-      'Personalized curriculum based on your dating challenges',
-      'Weekly accountability and progress tracking',
+      'Personalised curriculum based on your dating challenges',
       'Detailed feedback on recorded approaches (optional)',
-      'Text message and dating app profile optimization'
+      'Text messages training and optimisation'
     ],
     duration: 'To be discussed',
   },
   {
     id: 'residential',
     title: 'Residentials',
-    description: "Immersive multi-day programs where you'll live with coaches and receive intensive training, real-world practice, and personalized feedback.",
-    imageSrc: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80',
+    description: "Immersive multi-day programs where you'll live with coaches and receive intensive training, real-world practice, and personalised feedback.",
+    imageSrc: 'https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     benefits: [
-      'Full immersion in the dating mindset for 3-7 days',
+      'Full immersion in the dating mindset for 3-7 days or more',
       'Live with professional coaches who provide 24/7 mentorship',
       'Multiple daily practice sessions in various environments',
       'Evening implementations in high-energy social venues',
@@ -51,7 +50,7 @@ const coachingServices = [
     id: 'bootcamp',
     title: 'Worldwide Bootcamps',
     description: 'Intensive group training experiences in cities around the world, combining classroom learning with real-world application.',
-    imageSrc: 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80',
+    imageSrc: 'https://images.unsplash.com/photo-1495181941197-70a606546974?q=80&w=2812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     benefits: [
       'Learn alongside like-minded men in a supportive environment',
       'Daily theoretical training and practical implementations',
@@ -92,11 +91,11 @@ const Coaching = () => {
               </div>
               
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-                Specialised Coaching for Daygame Mastery
+                Coaching Programs for Daygame Mastery
               </h1>
               
               <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
-                From personalized one-on-one sessions to immersive residential experiences, our coaching programs are designed to transform your dating life.
+                From one-on-one sessions to immersive residential experiences, our coaching programs are designed to quickly transform your dating life.
               </p>
             </div>
           </div>

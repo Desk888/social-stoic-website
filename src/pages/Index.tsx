@@ -12,7 +12,7 @@ const Index = () => {
       
       <main>
         <HeroSection 
-          title="The Art of Meeting Beautiful Women The Organic Way"
+          title="Master The Art of Meeting Beautiful Women The Organic Way"
           description="Unlock the power of organic connections through Daygame. Learn to approach, connect, and build relationships with confidence."
         />
         

@@ -11,33 +11,33 @@ import { X } from 'lucide-react';
 const videos = [
   {
     id: '1',
-    title: 'How To Make Friends: From Strangers To Friends Fast',
+    title: 'How To Pickup Women In Coffee Shops (Infield)',
     videoUrl: 'https://www.youtube.com/watch?v=UMZkMjD3luQ',
   },
   {
     id: '2',
-    title: 'How To Create REAL Social Confidence (Not Fake)',
-    videoUrl: 'https://www.youtube.com/watch?v=_Am8ItTeNoQ',
+    title: 'How To Pickup 9s and 10s (Infield Example)',
+    videoUrl: 'https://www.youtube.com/watch?v=H-_FULmTJXc&t=602s',
   },
   {
     id: '3',
-    title: 'The "Law of Reciprocity" in Social Skills',
-    videoUrl: 'https://www.youtube.com/watch?v=p-dwJvVTwpo',
+    title: 'Yes Man vs. Playful Jerk: Who Gets More Girls? (Real Life Test)',
+    videoUrl: 'https://www.youtube.com/watch?v=sNnxXLr-VOQ&t=182s',
   },
   {
     id: '4',
-    title: 'Overcome Approach Anxiety Forever (Powerful Mindset Shifts)',
-    videoUrl: 'https://www.youtube.com/watch?v=CXJIxHjM8a0',
+    title: 'Picking Up Girls in Prague (Infields)',
+    videoUrl: 'https://www.youtube.com/watch?v=A6dFLFMNK_I',
   },
   {
     id: '5',
-    title: 'How To Have An ENGAGING Conversation With Anyone (Going Beyond Small Talk)',
-    videoUrl: 'https://www.youtube.com/watch?v=ImYT_pdMH7Q',
+    title: 'Picking Up a Hot Blonde in Central London (Infield)',
+    videoUrl: 'https://www.youtube.com/watch?v=h6_1fB_LR5A&t=245s',
   },
   {
     id: '6',
-    title: 'How To Break The Ice With Anyone: 3 Practical Tips',
-    videoUrl: 'https://www.youtube.com/watch?v=2TjnZKqJe9k',
+    title: 'How to Get Instant Dates (Infield Examples)',
+    videoUrl: 'https://www.youtube.com/watch?v=ot43mkbGclQ&t=400s',
   },
 ];
 
@@ -115,7 +115,7 @@ const Videos = () => {
             
             {/* Subscribe CTA */}
             <div className="mt-16 text-center">
-              <h3 className="text-2xl font-bold mb-4">Subscribe to Our Channel</h3>
+              <h3 className="text-2xl font-bold mb-4">Subscribe to Our Channel For More Videos</h3>
               <p className="text-gray-300 mb-6">
                 New videos every week to help you improve your social and dating skills
               </p>

@@ -32,11 +32,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           alt={title}
           className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
         />
-        <div className="absolute top-4 right-4 z-20">
-          <span className="bg-stoic-green px-3 py-1 rounded-full text-xs font-medium text-white">
-            Service
-          </span>
-        </div>
       </div>
       
       <div className="flex flex-col flex-grow p-6">
