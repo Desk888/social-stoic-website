@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -13,7 +12,6 @@ const Index = () => {
       
       <main>
         <HeroSection 
-          imageUrl="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1920&q=80"
           title="The Art of Meeting Beautiful Women The Organic Way"
           description="Unlock the power of authentic connection through stoic principles. Learn to approach, connect, and build meaningful relationships with confidence and integrity."
         />

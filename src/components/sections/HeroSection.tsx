@@ -3,12 +3,16 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 interface HeroSectionProps {
-  imageUrl: string;
+  imageUrl?: string;
   title: string;
   description: string;
 }
 
-const HeroSection: React.FC<HeroSectionProps> = ({ imageUrl, title, description }) => {
+const HeroSection: React.FC<HeroSectionProps> = ({ 
+  imageUrl = "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1920&q=80", 
+  title, 
+  description 
+}) => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image and overlay */}
