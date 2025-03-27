@@ -9,7 +9,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ 
-  imageUrl = "https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=1920&q=80", 
+  imageUrl = "https://images.unsplash.com/photo-1522098543979-ffc7f79a56c4?auto=format&fit=crop&w=1920&q=80", 
   title, 
   description 
 }) => {
