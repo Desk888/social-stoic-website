@@ -20,7 +20,7 @@ const services = [
   {
     id: '3',
     title: 'Residentials',
-    description: 'Immersive multi-day programs where you'll live with coaches and receive intensive training, real-world practice, and personalized feedback.',
+    description: "Immersive multi-day programs where you'll live with coaches and receive intensive training, real-world practice, and personalized feedback.",
     imageSrc: 'https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=800&q=80',
     link: '/coaching'
   },
