@@ -17,8 +17,7 @@ const coachingServices = [
       'Immediate corrections to body language, vocal tonality, and conversational habits',
       'Build confidence through guided social interactions'
     ],
-    duration: '4-8 hours per session',
-    price: 'From $997'
+    duration: 'To be discussed.',
   },
   {
     id: 'online',
@@ -32,8 +31,7 @@ const coachingServices = [
       'Detailed feedback on recorded approaches (optional)',
       'Text message and dating app profile optimization'
     ],
-    duration: '60-90 minutes per session',
-    price: 'From $597'
+    duration: 'To be discussed',
   },
   {
     id: 'residential',
@@ -47,8 +45,7 @@ const coachingServices = [
       'Evening implementations in high-energy social venues',
       'Build lasting confidence through repeated success experiences'
     ],
-    duration: '3-7 days',
-    price: 'From $3,997'
+    duration: '3-7 or more days',
   },
   {
     id: 'bootcamp',
@@ -62,8 +59,7 @@ const coachingServices = [
       'Experience approaching in exotic international locations',
       'Multiple coaches providing diverse perspectives and expertise'
     ],
-    duration: '2-3 days',
-    price: 'From $1,997'
+    duration: '2-3 days or more',
   }
 ];
 
@@ -92,11 +88,11 @@ const Coaching = () => {
             <div className="max-w-3xl">
               <div className="flex items-center space-x-2 mb-6">
                 <div className="h-px w-10 bg-stoic-green"></div>
-                <span className="text-stoic-green uppercase tracking-wider text-sm font-medium">Our Programs</span>
+                <span className="text-stoic-green uppercase tracking-wider text-sm font-medium">Our Coaching Programs</span>
               </div>
               
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-                Specialized Coaching for Genuine Connection
+                Specialised Coaching for Daygame Mastery
               </h1>
               
               <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
@@ -143,15 +139,7 @@ const Coaching = () => {
                         <h4 className="text-sm uppercase text-gray-400 mb-1">Duration</h4>
                         <p className="text-lg font-medium">{service.duration}</p>
                       </div>
-                      <div className="bg-stoic-darkgray p-4 rounded-lg">
-                        <h4 className="text-sm uppercase text-gray-400 mb-1">Investment</h4>
-                        <p className="text-lg font-medium">{service.price}</p>
-                      </div>
                     </div>
-                    
-                    <Link to="/contact" className="btn-primary">
-                      Book a Consultation
-                    </Link>
                   </div>
                   
                   <div className={`relative h-[500px] overflow-hidden rounded-xl ${
@@ -222,7 +210,7 @@ const Coaching = () => {
               <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
                 Book a free consultation call to discuss which program is right for you and take the first step toward transforming your dating life.
               </p>
-              <Link to="/contact" className="btn-primary">
+              <Link to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" className="btn-primary">
                 Book Your Free Consultation
               </Link>
             </div>

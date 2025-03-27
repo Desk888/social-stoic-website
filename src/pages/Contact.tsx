@@ -44,7 +44,7 @@ const Contact = () => {
                 </div>
                 
                 {/* Contact Information */}
-                <div className="bg-stoic-darkgray rounded-xl p-6">
+                {/* <div className="bg-stoic-darkgray rounded-xl p-6">
                   <h3 className="text-xl font-medium mb-4">Contact Information</h3>
                   <div className="space-y-4">
                     <div className="flex items-start">
@@ -67,7 +67,7 @@ const Contact = () => {
                           <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                         </svg>
                       </div>
-                      <div>
+                      {/* <div>
                         <h4 className="text-sm text-gray-400">Locations</h4>
                         <p className="text-white">New York • Los Angeles • London • Sydney</p>
                       </div>
@@ -84,10 +84,10 @@ const Contact = () => {
                         <a href="tel:+1234567890" className="text-white hover:text-stoic-green-light transition-colors">
                           +1 (234) 567-890
                         </a>
-                      </div>
+                      </div> 
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               
               <div className="animation-fade-in-right">
@@ -108,7 +108,7 @@ const Contact = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-stoic-black/95 to-stoic-black/80"></div>
           </div>
           
-          <div className="container-custom relative z-10">
+          {/* <div className="container-custom relative z-10">
             <div className="max-w-3xl">
               <div className="flex items-center space-x-2 mb-6">
                 <div className="h-px w-10 bg-stoic-green"></div>
@@ -131,7 +131,7 @@ const Contact = () => {
                 Through our various coaching programs, we help you transform into a man who naturally attracts women through his character, confidence, and communication skills.
               </p>
             </div>
-          </div>
+          </div> */}
         </section>
         
         {/* FAQ Section */}
@@ -185,14 +185,14 @@ const Contact = () => {
               ))}
             </div>
             
-            <div className="text-center mt-12">
+            {/* <div className="text-center mt-12">
               <p className="text-gray-300 mb-6">
                 Still have questions? Feel free to reach out to us directly.
               </p>
               <a href="mailto:info@socialstoic.com" className="btn-secondary">
                 Email Us
               </a>
-            </div>
+            </div> */}
           </div>
         </section>
       </main>

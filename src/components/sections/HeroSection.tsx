@@ -9,7 +9,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ 
-  imageUrl = "https://images.unsplash.com/photo-1522098543979-ffc7f79a56c4?auto=format&fit=crop&w=1920&q=80", 
+  imageUrl = "https://images.unsplash.com/photo-1582537343006-b58e8514af65?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
   title, 
   description 
 }) => {
@@ -42,11 +42,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <Link to="/contact" className="btn-primary">
+            <Link to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" className="btn-primary">
               Book a Consultation
             </Link>
             <Link to="/coaching" className="btn-secondary">
-              Explore Our Services
+              Coaching
             </Link>
           </div>
         </div>

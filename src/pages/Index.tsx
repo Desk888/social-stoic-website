@@ -13,13 +13,13 @@ const Index = () => {
       <main>
         <HeroSection 
           title="The Art of Meeting Beautiful Women The Organic Way"
-          description="Unlock the power of authentic connection through stoic principles. Learn to approach, connect, and build meaningful relationships with confidence and integrity."
+          description="Unlock the power of organic connections through Daygame. Learn to approach, connect, and build relationships with confidence."
         />
         
         <ServicesSection />
         
         {/* Philosophy Section */}
-        <section className="section-padding bg-stoic-darkgray">
+        {/* <section className="section-padding bg-stoic-darkgray">
           <div className="container-custom">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="opacity-0 animate-fade-in-left order-2 md:order-1">
@@ -49,13 +49,13 @@ const Index = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         
         {/* CTA Section */}
         <section className="section-padding relative overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=1920&q=80"
+              src="https://plus.unsplash.com/premium_photo-1661609291595-3a849ea67002?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Background"
               className="w-full h-full object-cover"
             />
@@ -66,10 +66,10 @@ const Index = () => {
             <div className="max-w-3xl mx-auto text-center opacity-0 animate-fade-in">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Dating Life?</h2>
               <p className="text-lg text-gray-300 mb-8">
-                Take the first step towards building authentic connections with women through our specialized coaching programs.
+                Take the first step towards building authentic connections with women through our coaching programs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="/contact" className="btn-primary">
+                <Link to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" className="btn-primary">
                   Book a Consultation
                 </Link>
                 <Link to="/coaching" className="btn-secondary">

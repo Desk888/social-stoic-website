@@ -17,7 +17,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-sm text-gray-400 max-w-xs">
-              Teaching men the art of meeting beautiful women in an organic way through stoic principles and authentic social dynamics.
+              Teaching men the art of meeting beautiful women the organic way.
             </p>
           </div>
           
@@ -46,7 +46,7 @@ const Footer = () => {
           {/* Contact */}
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Contact</h4>
-            <Link to="/contact" className="inline-block">
+            <Link to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" className="inline-block">
               <button className="btn-secondary py-2">Book a Consultation</button>
             </Link>
           </div>
@@ -54,16 +54,16 @@ const Footer = () => {
         
         <div className="border-t border-stoic-gray/30 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-500">
-            © {year} Social Stoic. All rights reserved.
+            © {year} Social Stoic. All rights reserved. Website designed by <a href="https://github.com/Desk888" className="text-stoic-green-light hover:text-stoic-green transition-colors">Desk888</a>.
           </p>
-          <div className="mt-4 md:mt-0 flex space-x-6">
+          {/* <div className="mt-4 md:mt-0 flex space-x-6">
             <a href="#" className="text-gray-500 hover:text-stoic-green-light transition-colors">
               Terms of Service
             </a>
             <a href="#" className="text-gray-500 hover:text-stoic-green-light transition-colors">
               Privacy Policy
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

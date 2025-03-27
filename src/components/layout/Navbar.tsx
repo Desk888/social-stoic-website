@@ -60,7 +60,7 @@ const Navbar = () => {
             </Link>
           ))}
           <Link 
-            to="/contact" 
+            to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" 
             className="btn-primary py-2 ml-2"
           >
             Book a Consultation
