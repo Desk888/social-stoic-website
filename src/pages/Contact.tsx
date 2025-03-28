@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ContactForm from '@/components/sections/ContactForm';
+import SmoothImage from '@/components/ui/SmoothImage';
 
 const Contact = () => {
   useEffect(() => {
@@ -15,8 +16,19 @@ const Contact = () => {
       
       <main className="page-transition pt-24">
         {/* Contact Hero Section */}
-        <section className="py-16 md:py-24">
-          <div className="container-custom">
+        <section className="py-16 md:py-24 relative">
+          {/* Background Image */}
+          <div className="absolute inset-0 z-0 opacity-20">
+            <SmoothImage
+              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80"
+              alt="Background"
+              className="w-full h-full object-cover"
+              aspectRatio="aspect-auto"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-stoic-black/95 to-stoic-black/80"></div>
+          </div>
+          
+          <div className="container-custom relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               <div>
                 <div className="flex items-center space-x-2 mb-6">
