@@ -39,6 +39,8 @@ const Contact = () => {
               <div className="rounded-xl overflow-hidden">
                 <SmoothImage
                   src="/images/adameddie.webp"
+                  height={4000}
+                  width={5000}
                   loading="lazy"
                   alt="Eddie and Adam - Social Stoic Team"
                   className="w-full"
@@ -63,6 +65,8 @@ const Contact = () => {
                 <div className="absolute inset-0 z-0 opacity-30 rounded-xl overflow-hidden">
                   <SmoothImage
                     src=""
+                    height={0}
+                    width={0}
                     alt="Background"
                     loading="lazy"
                     className="w-full h-full object-cover"

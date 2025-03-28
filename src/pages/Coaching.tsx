@@ -84,6 +84,8 @@ const Coaching = () => {
           <div className="absolute inset-0 z-0">
             <img
               src="https://images.unsplash.com/photo-1604700403855-dc64a1320324?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              height={3542}
+              width={2360}
               alt="Background"
               className="w-full h-full object-cover"
             />
@@ -152,7 +154,10 @@ const Coaching = () => {
                     index % 2 !== 0 ? 'lg:col-start-1' : ''
                   }`}>
                     <img 
-                      src={service.imageSrc} 
+                      src={service.imageSrc}
+                      height={3542}
+                      width={2360}
+                      loading="lazy"
                       alt={service.title} 
                       className="absolute inset-0 w-full h-full object-cover"
                     />

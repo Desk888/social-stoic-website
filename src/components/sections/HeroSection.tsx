@@ -20,6 +20,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <img
           src={imageUrl}
           alt="Hero background"
+          height={3540}
+          width={2360}
+          loading="lazy"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50"></div>

@@ -174,5 +174,5 @@
 
 @font-face{
   font-family: "Decalotype";
-  src: local("Decalotype-BlackItalic"), url("../public/fonts/Decalotype-ExtraBoldItalic.otf") format("truetype");
+  src: local("Decalotype-BlackItalic"), url("/fonts/Decalotype-ExtraBoldItalic.otf") format("truetype");
 }
