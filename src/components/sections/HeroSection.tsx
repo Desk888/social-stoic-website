@@ -30,10 +30,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="max-w-3xl">
           <div className="flex items-center space-x-2 mb-6">
             <div className="h-px w-10 bg-stoic-green"></div>
-            <span className="text-stoic-green uppercase tracking-wider text-sm font-medium">Social Stoic</span>
+            <span className="font-primaryItalic text-stoic-green uppercase tracking-wider text-sm font-medium">Social Stoic</span>
           </div>
           
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-primaryItalic font-bold text-white mb-6 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             {title}
           </h1>
           

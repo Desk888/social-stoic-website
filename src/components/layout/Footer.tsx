@@ -26,7 +26,7 @@ const Footer = () => {
           
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Quick Links</h4>
+            <h4 className="font-primaryItalic text-lg font-semibold">Quick Links</h4>
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-400 hover:text-stoic-green-light transition-colors">Home</Link></li>
               <li><Link to="/coaching" className="text-gray-400 hover:text-stoic-green-light transition-colors">Coaching</Link></li>
@@ -37,7 +37,7 @@ const Footer = () => {
           
           {/* Services */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Our Services</h4>
+            <h4 className="font-primaryItalic text-lg font-semibold">Our Services</h4>
             <ul className="space-y-2">
               <li><Link to="/coaching" className="text-gray-400 hover:text-stoic-green-light transition-colors">1-on-1 Coaching In-Person</Link></li>
               <li><Link to="/coaching" className="text-gray-400 hover:text-stoic-green-light transition-colors">1-on-1 Coaching Online</Link></li>
@@ -48,7 +48,7 @@ const Footer = () => {
           
           {/* Contact */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold">Contact</h4>
+            <h4 className="font-primaryItalic text-lg font-semibold">Contact</h4>
             <Link to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" className="inline-block">
               <button className="btn-secondary py-2">Book a Consultation</button>
             </Link>
@@ -57,7 +57,7 @@ const Footer = () => {
         
         <div className="border-t border-stoic-gray/30 mt-10 pt-6 flex flex-col md:flex-row justify-center items-center">
               <p className="text-sm text-gray-500 text-center">
-              © {year} Social Stoic. All rights reserved. Website designed by <a href="https://github.com/Desk888" className="text-stoic-green-light hover:text-stoic-green transition-colors">Desk888</a>.
+              © {year} Social Stoic. All rights reserved. Website designed by Lorenzo Filips <a href="https://github.com/Desk888" className="text-stoic-green-light hover:text-stoic-green transition-colors">(Desk888)</a>.
               </p>
             </div>
       </div>

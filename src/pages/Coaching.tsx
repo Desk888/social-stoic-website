@@ -94,11 +94,11 @@ const Coaching = () => {
             <div className="max-w-3xl">
               <div className="flex items-center space-x-2 mb-6">
                 <div className="h-px w-10 bg-stoic-green"></div>
-                <span className="text-stoic-green uppercase tracking-wider text-sm font-medium">Our Coaching Programs</span>
+                <span className="font-primaryItalic text-stoic-green uppercase tracking-wider text-sm font-medium">Our Coaching Programs</span>
               </div>
               
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
-                Coaching Programs for Daygame Mastery
+              <h1 className="font-primaryItalic text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6">
+                Daygame Coaching Programs
               </h1>
               
               <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
@@ -121,11 +121,11 @@ const Coaching = () => {
                   }`}
                 >
                   <div className={`${index % 2 !== 0 ? 'lg:col-start-2' : ''}`}>
-                    <h2 className="text-3xl font-bold mb-6">{service.title}</h2>
+                    <h2 className="font-primaryItalic text-3xl font-bold mb-6">{service.title}</h2>
                     <p className="text-gray-300 mb-8">{service.description}</p>
                     
                     <div className="mb-8">
-                      <h3 className="text-xl font-semibold mb-4 text-stoic-green-light">Key Benefits</h3>
+                      <h3 className="font-primaryItalic text-xl font-semibold mb-4 text-stoic-green-light">Key Benefits</h3>
                       <ul className="space-y-3">
                         {service.benefits.map((benefit, i) => (
                           <li key={i} className="flex items-start">
@@ -168,7 +168,7 @@ const Coaching = () => {
         <section className="bg-stoic-darkgray py-16 md:py-24">
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="font-primaryItalic text-3xl md:text-4xl font-bold mb-6">
                 Success Stories
               </h2>
               <p className="text-lg text-gray-400">
@@ -210,7 +210,7 @@ const Coaching = () => {
         <section className="py-16 md:py-24">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto bg-stoic-darkgray border border-stoic-gray/20 rounded-xl p-8 md:p-12 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="font-primaryItalic text-3xl md:text-4xl font-bold mb-6">
                 Ready to Start Your Journey?
               </h2>
               <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">

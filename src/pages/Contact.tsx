@@ -28,11 +28,11 @@ const Contact = () => {
             <div className="max-w-4xl mx-auto">
               <div className="flex items-center space-x-2 mb-6 justify-center">
                 <div className="h-px w-10 bg-stoic-green"></div>
-                <span className="text-stoic-green uppercase tracking-wider text-sm font-medium">Meet the Team</span>
+                <span className="font-primaryItalic text-stoic-green uppercase tracking-wider text-sm font-medium">Meet the Team</span>
                 <div className="h-px w-10 bg-stoic-green"></div>
               </div>
               
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+              <h2 className="font-primaryItalic text-3xl md:text-4xl font-bold mb-8 text-center">
                 The Faces Behind Social Stoic
               </h2>
               
@@ -75,10 +75,10 @@ const Contact = () => {
                 <div className="relative z-10 p-6">
                   <div className="flex items-center space-x-2 mb-6">
                     <div className="h-px w-10 bg-stoic-green"></div>
-                    <span className="text-stoic-green uppercase tracking-wider text-sm font-medium">Get In Touch</span>
+                    <span className="font-primaryItalic text-stoic-green uppercase tracking-wider text-sm font-medium">Get In Touch</span>
                   </div>
                   
-                  <h1 className="text-4xl sm:text-5xl font-bold mb-6">
+                  <h1 className="font-primaryItalic text-4xl sm:text-5xl font-bold mb-6">
                     Let's Start Your Transformation
                   </h1>
                   
@@ -88,7 +88,7 @@ const Contact = () => {
                   
                   {/* About Us Section */}
                   <div className="mb-8">
-                    <h2 className="text-2xl font-bold mb-4">About Us</h2>
+                    <h2 className="font-primaryItalic text-2xl font-bold mb-4">About Us</h2>
                     <p className="text-gray-300 mb-4">
                     With over 30 years of combined experience in daygame and offline dating, we've dedicated our lives to
                     helping men break free from frustration and create the dating lives they've always dreamed of—through
@@ -97,7 +97,7 @@ const Contact = () => {
                     </p>
                     {/* Eddie's Section */}
                     <div className="mb-6"></div>
-                      <h3 className="text-xl font-semibold mb-2">Eddie</h3>
+                      <h3 className="font-primaryItalic text-xl font-semibold mb-2">Eddie</h3>
                       <p className="text-gray-300">
                       I've been in this game since 2005, coaching since 2012—which is why a lot of guys jokingly call me 'the
                       dinosaur of Daygame.' It's safe to say that … you're unlikely to find anyone out there with more
@@ -111,7 +111,7 @@ const Contact = () => {
 
                     {/* Adam's Section */}
                     <div className="mb-6">
-                      <h3 className="text-xl font-semibold mb-2">Adam</h3>
+                      <h3 className="font-primaryItalic text-xl font-semibold mb-2">Adam</h3>
                       <p className="text-gray-300">
                       I might not be a Daygame dinosaur like Eddie just yet… but I'm definitely no spring chicken either. Like
                       Eddie, I've dedicated my life to this. I started gaming in 2013, and since 2018, I've been coaching
@@ -123,7 +123,7 @@ const Contact = () => {
                     </div>
                     {/* Our Philosophy Section */}
                     <div className="mb-6">
-                      <h3 className="text-xl font-semibold mb-2">Our Philosophy</h3>
+                      <h3 className="font-primaryItalic text-xl font-semibold mb-2">Our Philosophy</h3>
                       <p className="text-gray-300">
                       Together we're Social Stoic. And our name says it all. The Stoic part? That's
                       masculinity—strength, composure, and an unshakable mindset
@@ -144,7 +144,7 @@ const Contact = () => {
         <section className="bg-stoic-darkgray py-16 md:py-24">
           <div className="container-custom">
             <div className="max-w-3xl mx-auto text-center mb-16">
-              <h2 className="text-3xl font-bold mb-6">
+              <h2 className="font-primaryItalic text-3xl font-bold mb-6">
                 Frequently Asked Questions
               </h2>
               <p className="text-gray-300">

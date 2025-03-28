@@ -21,6 +21,7 @@ export default {
 		extend: {
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],
+				primaryItalic: ['Decalotype'],
 			},
 			colors: {
 				border: "hsl(var(--border))",

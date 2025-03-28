@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from '@emailjs/browser';
 
 interface ContactFormProps {
   className?: string;
@@ -21,20 +22,56 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast({
-        title: "Message sent",
-        description: "We'll get back to you as soon as possible.",
-      });
-      setFormData({ name: '', email: '', message: '' });
-    }, 1500);
-  };
+  //   // Simulate form submission
+  //   setTimeout(() => {
+  //     setIsSubmitting(false);
+  //     toast({
+  //       title: "Message sent",
+  //       description: "We'll get back to you as soon as possible.",
+  //     });
+  //     setFormData({ name: '', email: '', message: '' });
+  //   }, 1500);
+  // };
+
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    const response = await emailjs.send(
+      'YOUR_SERVICE_ID',  // Replace with your actual EmailJS service ID
+      'YOUR_TEMPLATE_ID', // Replace with your actual EmailJS template ID
+      formData,
+      'YOUR_PUBLIC_KEY'   // Replace with your EmailJS public key
+    );
+
+    if (response.status !== 200) {
+      throw new Error('Failed to send message');
+    }
+
+    toast({
+      title: "Message sent",
+      description: "We'll get back to you as soon as possible.",
+    });
+
+    setFormData({ name: '', email: '', message: '' });
+
+  } catch (error) {
+    toast({
+      title: "Error",
+      description: "Failed to send message. Please try again.",
+      variant: "destructive",
+    });
+  } finally {
+    setIsSubmitting(false);
+  }
+};
+
 
   return (
     <div className={cn("bg-stoic-darkgray rounded-xl p-6 md:p-8", className)}>

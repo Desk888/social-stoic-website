@@ -38,7 +38,7 @@ const Index = () => {
           
           <div className="container-custom relative z-10">
             <div className="max-w-3xl mx-auto text-center opacity-0 animate-fade-in">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Dating Life?</h2>
+              <h2 className="font-primaryItalic text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Dating Life?</h2>
               <p className="text-lg text-gray-300 mb-8">
                 Take the first step towards building authentic connections with women through our coaching programs.
               </p>

@@ -48,7 +48,7 @@ const ServicesSection: React.FC<ServicesSectionProps> = ({
     <section className={`section-padding ${className}`}>
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6 opacity-0 animate-fade-in">
+          <h2 className="text-3xl md:text-4xl font-primaryItalic font-bold mb-6 opacity-0 animate-fade-in">
             {sectionTitle}
           </h2>
           <p className="text-lg text-gray-400 opacity-0 animate-fade-in" style={{ animationDelay: '0.2s' }}>

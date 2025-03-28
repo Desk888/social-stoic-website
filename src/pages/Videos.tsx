@@ -82,12 +82,12 @@ const Videos = () => {
               <div className="inline-block mb-6">
                 <div className="flex items-center justify-center space-x-2">
                   <div className="h-px w-10 bg-stoic-green"></div>
-                  <span className="text-stoic-green uppercase tracking-wider text-sm font-medium">Our Videos</span>
+                  <span className="font-primaryItalic text-stoic-green uppercase tracking-wider text-sm font-medium">Our Videos</span>
                   <div className="h-px w-10 bg-stoic-green"></div>
                 </div>
               </div>
               
-              <h1 className="text-4xl sm:text-5xl font-bold mb-6">
+              <h1 className="font-primaryItalic text-4xl sm:text-5xl font-bold mb-6">
                 Social Stoic Video Library
               </h1>
               
@@ -122,7 +122,7 @@ const Videos = () => {
             
             {/* Subscribe CTA */}
             <div className="mt-16 text-center">
-              <h3 className="text-2xl font-bold mb-4">Subscribe to Our Channel For More Videos</h3>
+              <h3 className="font-primaryItalic text-2xl font-bold mb-4">Subscribe to Our Channel For More Videos</h3>
               <p className="text-gray-300 mb-6">
                 New videos every week to help you improve your social and dating skills
               </p>
@@ -144,7 +144,7 @@ const Videos = () => {
             <div className="bg-stoic-darkgray border border-stoic-gray/20 rounded-xl overflow-hidden">
               <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="p-8 md:p-12 flex flex-col justify-center">
-                  <h2 className="text-3xl font-bold mb-6">
+                  <h2 className="font-primaryItalic text-3xl font-bold mb-6">
                     Want Personalised Guidance?
                   </h2>
                   <p className="text-gray-300 mb-8">

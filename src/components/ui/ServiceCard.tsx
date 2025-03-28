@@ -35,7 +35,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       </div>
       
       <div className="flex flex-col flex-grow p-6">
-        <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-stoic-green-light transition-colors">
+        <h3 className="font-primaryItalic text-xl font-semibold text-white mb-3 group-hover:text-stoic-green-light transition-colors">
           {title}
         </h3>
         <p className="text-gray-400 mb-6 flex-grow">{description}</p>
