@@ -41,7 +41,7 @@ interface ServicesSectionProps {
 
 const ServicesSection: React.FC<ServicesSectionProps> = ({
   sectionTitle = "What We Offer",
-  sectionSubtitle = "Explore our specialized coaching services designed to transform your dating life",
+  sectionSubtitle = "Explore our specialised coaching services designed to transform your dating life",
   className = "",
 }) => {
   return (
