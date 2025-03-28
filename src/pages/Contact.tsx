@@ -4,6 +4,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import ContactForm from '@/components/sections/ContactForm';
 import SmoothImage from '@/components/ui/SmoothImage';
+import { Helmet } from 'react-helmet';
 
 const Contact = () => {
   useEffect(() => {
@@ -12,6 +13,11 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-stoic-black text-white">
+      <Helmet>
+                      <meta charSet="utf-8" />
+                      <title>Social Stoic | Contact</title>
+                      <link rel="canonical" href="/contact" />
+      </Helmet>
       <Navbar />
       
       <main className="page-transition pt-24">

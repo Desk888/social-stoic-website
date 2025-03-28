@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const coachingServices = [
   {
@@ -69,6 +70,11 @@ const Coaching = () => {
 
   return (
     <div className="min-h-screen bg-stoic-black text-white">
+      <Helmet>
+                      <meta charSet="utf-8" />
+                      <title>Social Stoic | Coaching</title>
+                      <link rel="canonical" href="/coaching" />
+      </Helmet>
       <Navbar />
       
       <main className="page-transition pt-24">

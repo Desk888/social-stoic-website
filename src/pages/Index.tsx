@@ -4,10 +4,16 @@ import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/sections/HeroSection';
 import ServicesSection from '@/components/sections/ServicesSection';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-stoic-black text-white">
+      <Helmet>
+                      <meta charSet="utf-8" />
+                      <title>Social Stoic | Home</title>
+                      <link rel="canonical" href="/" />
+      </Helmet>
       <Navbar />
       
       <main>

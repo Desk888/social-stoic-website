@@ -6,6 +6,7 @@ import VideoCard from '@/components/ui/VideoCard';
 import { Link } from 'react-router-dom';
 import { extractYouTubeVideoId, getYouTubeEmbedUrl } from '@/lib/youtube';
 import { X } from 'lucide-react';
+import { Helmet } from 'react-helmet';
 
 // Real YouTube video data
 const videos = [
@@ -66,6 +67,11 @@ const Videos = () => {
   return (
     <div className="min-h-screen bg-stoic-black text-white">
       <Navbar />
+      <Helmet>
+                <meta charSet="utf-8" />
+                <title>Social Stoic | Videos</title>
+                <link rel="canonical" href="/videos" />
+      </Helmet>
       
       <main className="page-transition pt-24">
         {/* Hero Section */}
