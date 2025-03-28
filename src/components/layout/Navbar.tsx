@@ -40,9 +40,14 @@ const Navbar = () => {
     >
       <nav className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2 z-30">
-          <span className="text-xl font-bold text-white whitespace-nowrap">
+          {/* <span className="text-xl font-bold text-white whitespace-nowrap">
             Social<span className="text-stoic-green-light">Stoic</span>
-          </span>
+          </span> */}
+          <img 
+            src="/images/social.png" 
+            alt="Social Stoic Logo" 
+            className="h-10 w-auto"
+          />
         </Link>
 
         {/* Desktop Navigation */}

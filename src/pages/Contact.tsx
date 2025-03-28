@@ -50,12 +50,45 @@ const Contact = () => {
                   <div className="mb-8">
                     <h2 className="text-2xl font-bold mb-4">About Us</h2>
                     <p className="text-gray-300 mb-4">
-                      Social Stoic was founded with a clear mission: to teach men how to develop genuine connections with women through authentic social interactions and stoic principles.
+                    With over 30 years of combined experience in daygame and offline dating, we’ve dedicated our lives to
+                    helping men break free from frustration and create the dating lives they’ve always dreamed of—through
+                    the powerful, time-tested art of cold approach. Everything we teach is real, tested, and proven. And
+                    once you learn it, you’ll never have to struggle with dating again.
                     </p>
-                    <p className="text-gray-300">
-                      Our team of experienced coaches has helped hundreds of men around the world transform their dating lives through personalized coaching, immersive programs, and comprehensive education.
-                    </p>
-                  </div>
+                    {/* Eddie's Section */}
+                    <div className="mb-6"></div>
+                      <h3 className="text-xl font-semibold mb-2">Eddie</h3>
+                      <p className="text-gray-300">
+                      I've been in this game since 2005, coaching since 2012—which is why a lot of guys jokingly call me 'the
+                      dinosaur of Daygame.' It's safe to say that … you're unlikely to find anyone out there with more
+                      experience who's still actively coaching at this level. I've dedicated the past twenty years of my life to
+                      this. I've coached thousands of men from every background and skill level, from beginners struggling to
+                      take their first step to advanced guys refining the finer points of their game. I've seen it all, collaborated
+                      with some of the biggest names in this space, and continuosly refined what actually works to help get
+                      men real results.
+                      </p>
+                    </div>
+
+                    {/* Adam's Section */}
+                    <div className="mb-6">
+                      <h3 className="text-xl font-semibold mb-2">Adam</h3>
+                      <p className="text-gray-300">
+                      I might not be a Daygame dinosaur like Eddie just yet… but I'm definitely no spring chicken either. Like
+                      Eddie, I've dedicated my life to this. I started gaming in 2013, and since 2018, I've been coaching
+                      alongside Eddie—refining, evolving, and pushing the boundaries of what's possible with these
+                      techniques. Starting so young gave me the unique opportunity to test, adapt, and master this craft at an
+                      insane level. I’ve taken these skills to their absolute limit, and now, I’m here to show you exactly how to do
+                      the same.
+                      </p>
+                    </div>
+                    {/* Our Philosophy Section */}
+                    <div className="mb-6">
+                      <h3 className="text-xl font-semibold mb-2">Our Philosophy</h3>
+                      <p className="text-gray-300">
+                      Together we’re Social Stoic. And our name says it all. The Stoic part? That’s
+                      masculinity—strength, composure, and an unshakable mindset
+                      </p>
+                    </div>
                 </div>
               </div>
               
@@ -65,43 +98,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-        </section>
-        
-        {/* About Image Section */}
-        <section className="relative py-16 md:py-24 overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img
-              src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=1920&q=80" 
-              alt="Background"
-              className="w-full h-full object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-stoic-black/95 to-stoic-black/80"></div>
-          </div>
-          
-          {/* <div className="container-custom relative z-10">
-            <div className="max-w-3xl">
-              <div className="flex items-center space-x-2 mb-6">
-                <div className="h-px w-10 bg-stoic-green"></div>
-                <span className="text-stoic-green uppercase tracking-wider text-sm font-medium">Our Philosophy</span>
-              </div>
-              
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                The Social Stoic Approach
-              </h2>
-              
-              <p className="text-lg text-gray-300 mb-6">
-                We believe that dating success comes from developing genuine confidence, emotional intelligence, and social skills—not from manipulative tactics or techniques.
-              </p>
-              
-              <p className="text-lg text-gray-300 mb-6">
-                Our methodology combines ancient stoic wisdom with modern social dynamics, teaching men how to approach dating with authenticity, intention, and integrity.
-              </p>
-              
-              <p className="text-lg text-gray-300">
-                Through our various coaching programs, we help you transform into a man who naturally attracts women through his character, confidence, and communication skills.
-              </p>
-            </div>
-          </div> */}
         </section>
         
         {/* FAQ Section */}
