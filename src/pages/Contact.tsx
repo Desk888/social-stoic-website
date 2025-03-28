@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -50,10 +51,10 @@ const Contact = () => {
                   <div className="mb-8">
                     <h2 className="text-2xl font-bold mb-4">About Us</h2>
                     <p className="text-gray-300 mb-4">
-                    With over 30 years of combined experience in daygame and offline dating, we’ve dedicated our lives to
-                    helping men break free from frustration and create the dating lives they’ve always dreamed of—through
+                    With over 30 years of combined experience in daygame and offline dating, we've dedicated our lives to
+                    helping men break free from frustration and create the dating lives they've always dreamed of—through
                     the powerful, time-tested art of cold approach. Everything we teach is real, tested, and proven. And
-                    once you learn it, you’ll never have to struggle with dating again.
+                    once you learn it, you'll never have to struggle with dating again.
                     </p>
                     {/* Eddie's Section */}
                     <div className="mb-6"></div>
@@ -77,7 +78,7 @@ const Contact = () => {
                       Eddie, I've dedicated my life to this. I started gaming in 2013, and since 2018, I've been coaching
                       alongside Eddie—refining, evolving, and pushing the boundaries of what's possible with these
                       techniques. Starting so young gave me the unique opportunity to test, adapt, and master this craft at an
-                      insane level. I’ve taken these skills to their absolute limit, and now, I’m here to show you exactly how to do
+                      insane level. I've taken these skills to their absolute limit, and now, I'm here to show you exactly how to do
                       the same.
                       </p>
                     </div>
@@ -85,7 +86,7 @@ const Contact = () => {
                     <div className="mb-6">
                       <h3 className="text-xl font-semibold mb-2">Our Philosophy</h3>
                       <p className="text-gray-300">
-                      Together we’re Social Stoic. And our name says it all. The Stoic part? That’s
+                      Together we're Social Stoic. And our name says it all. The Stoic part? That's
                       masculinity—strength, composure, and an unshakable mindset
                       </p>
                     </div>
@@ -95,6 +96,36 @@ const Contact = () => {
               {/* Form Section - No Background Image */}
               <div className="animation-fade-in-right">
                 <ContactForm />
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        {/* Team Image Section */}
+        <section className="py-16 bg-stoic-black">
+          <div className="container-custom">
+            <div className="max-w-4xl mx-auto">
+              <div className="flex items-center space-x-2 mb-6 justify-center">
+                <div className="h-px w-10 bg-stoic-green"></div>
+                <span className="text-stoic-green uppercase tracking-wider text-sm font-medium">Meet the Team</span>
+                <div className="h-px w-10 bg-stoic-green"></div>
+              </div>
+              
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+                The Faces Behind Social Stoic
+              </h2>
+              
+              <div className="rounded-xl overflow-hidden">
+                <SmoothImage
+                  src="/images/adameddie.jpg"
+                  alt="Eddie and Adam - Social Stoic Team"
+                  className="w-full"
+                  aspectRatio="aspect-[16/9]"
+                />
+              </div>
+              
+              <div className="mt-6 text-center text-gray-300">
+                <p>Eddie (left) and Adam (right) - Founders of Social Stoic</p>
               </div>
             </div>
           </div>
