@@ -2,7 +2,7 @@ const { SitemapStream, streamToPromise } = require('sitemap');
 const fs = require('fs');
 const path = require('path');
 
-const baseUrl = 'https://yourwebsite.com'; // Change this to your website URL
+const baseUrl = 'https://www.socialstoic.com';
 
 const pages = [
   '/',
