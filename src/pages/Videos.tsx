@@ -70,6 +70,7 @@ const Videos = () => {
       <Helmet>
                 <meta charSet="utf-8" />
                 <title>Social Stoic | Videos</title>
+                <meta name="description" content="Browse through our collection of coaching videos, infields and much more." />
                 <link rel="canonical" href="/videos" />
       </Helmet>
       
@@ -144,7 +145,7 @@ const Videos = () => {
               <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="p-8 md:p-12 flex flex-col justify-center">
                   <h2 className="text-3xl font-bold mb-6">
-                    Want Personalized Guidance?
+                    Want Personalised Guidance?
                   </h2>
                   <p className="text-gray-300 mb-8">
                     Our videos provide great insights, but nothing compares to personalised coaching tailored to your specific situation and goals.
@@ -165,7 +166,7 @@ const Videos = () => {
                 </div>
                 <div className="relative hidden md:block">
                   <img 
-                    src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=800&q=80" 
+                    src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
                     alt="Personal coaching" 
                     className="absolute inset-0 w-full h-full object-cover"
                   />

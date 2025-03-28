@@ -73,6 +73,7 @@ const Coaching = () => {
       <Helmet>
                       <meta charSet="utf-8" />
                       <title>Social Stoic | Coaching</title>
+                      <meta name="description" content="Our coaching programs are designed to quickly transform your dating life. From one-on-one sessions to immersive residential experiences, we offer a variety of programs to suit your needs." />
                       <link rel="canonical" href="/coaching" />
       </Helmet>
       <Navbar />
@@ -82,7 +83,7 @@ const Coaching = () => {
         <section className="relative py-20 overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1920&q=80"
+              src="https://images.unsplash.com/photo-1604700403855-dc64a1320324?q=80&w=3538&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="Background"
               className="w-full h-full object-cover"
             />

@@ -16,6 +16,7 @@ const Contact = () => {
       <Helmet>
                       <meta charSet="utf-8" />
                       <title>Social Stoic | Contact</title>
+                      <meta name="description" content="Ready to take your social and dating skills to the next level? Fill out the form, and we'll get back to you to discuss how we can help you achieve your goals." />
                       <link rel="canonical" href="/contact" />
       </Helmet>
       <Navbar />
@@ -45,7 +46,7 @@ const Contact = () => {
               </div>
               
               <div className="mt-6 text-center text-gray-300">
-                <p>Adam (left) and Eddie (right) - Founders of Social Stoic</p>
+                <p>Adam (left) and Eddie (right)</p>
               </div>
             </div>
           </div>
