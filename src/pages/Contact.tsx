@@ -18,14 +18,14 @@ const Contact = () => {
         {/* Contact Hero Section */}
         <section className="py-16 md:py-24 relative">
           {/* Background Image */}
-          <div className="absolute inset-0 z-0 opacity-20">
+          <div className="absolute inset-0 z-0 opacity-30">
             <SmoothImage
-              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&q=80"
+              src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&q=80"
               alt="Background"
               className="w-full h-full object-cover"
               aspectRatio="aspect-auto"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-stoic-black/95 to-stoic-black/80"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-stoic-black to-stoic-black/70"></div>
           </div>
           
           <div className="container-custom relative z-10">
