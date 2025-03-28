@@ -25,39 +25,6 @@ const Index = () => {
         
         <ServicesSection />
         
-        {/* Philosophy Section */}
-        {/* <section className="section-padding bg-stoic-darkgray">
-          <div className="container-custom">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-              <div className="opacity-0 animate-fade-in-left order-2 md:order-1">
-                <div className="flex items-center space-x-2 mb-6">
-                  <div className="h-px w-10 bg-stoic-green"></div>
-                  <span className="text-stoic-green uppercase tracking-wider text-sm font-medium">Our Philosophy</span>
-                </div>
-                <h2 className="text-3xl md:text-4xl font-bold mb-6">Stoic Principles for Modern Dating</h2>
-                <p className="text-gray-300 mb-6">
-                  We believe in authentic connections built on honesty, self-improvement, and a deep understanding of human psychology. Our approach combines ancient stoic wisdom with modern social dynamics to help you become the best version of yourself.
-                </p>
-                <p className="text-gray-300 mb-8">
-                  At Social Stoic, we teach men how to approach dating with intention, confidence, and integrity. No manipulative tactics, just genuine human connection.
-                </p>
-                <Link to="/coaching" className="btn-primary">
-                  Learn Our Method
-                </Link>
-              </div>
-              
-              <div className="relative h-[500px] overflow-hidden rounded-xl opacity-0 animate-fade-in-right order-1 md:order-2">
-                <img 
-                  src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952?auto=format&fit=crop&w=800&q=80" 
-                  alt="Man with confidence" 
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-stoic-black/80 via-transparent to-transparent"></div>
-              </div>
-            </div>
-          </div>
-        </section> */}
-        
         {/* CTA Section */}
         <section className="section-padding relative overflow-hidden">
           <div className="absolute inset-0 z-0">
