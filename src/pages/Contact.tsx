@@ -151,14 +151,14 @@ const Contact = () => {
               ))}
             </div>
             
-            {/* <div className="text-center mt-12">
+            <div className="text-center mt-12">
               <p className="text-gray-300 mb-6">
                 Still have questions? Feel free to reach out to us directly.
               </p>
-              <a href="mailto:info@socialstoic.com" className="btn-secondary">
+              <a href="mailto:thesocialstoic@gmail.com" className="btn-secondary">
                 Email Us
               </a>
-            </div> */}
+            </div>
           </div>
         </section>
       </main>
