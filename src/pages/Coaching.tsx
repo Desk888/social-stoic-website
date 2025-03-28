@@ -49,7 +49,7 @@ const coachingServices = [
   },
   {
     id: 'bootcamp',
-    title: 'Worldwide Bootcamps',
+    title: 'Worldwide Daygame Bootcamps',
     description: 'Intensive group training experiences in cities around the world, combining classroom learning with real-world application.',
     imageSrc: 'https://images.unsplash.com/photo-1495181941197-70a606546974?q=80&w=2812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     benefits: [
@@ -104,7 +104,7 @@ const Coaching = () => {
               </h1>
               
               <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl">
-                From one-on-one sessions to immersive residential experiences, our coaching programs are designed to quickly transform your dating life.
+                From one-on-one sessions to immersive residential experiences, our daygame coaching programs are designed to quickly transform your dating and social life.
               </p>
             </div>
           </div>

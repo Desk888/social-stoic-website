@@ -6,7 +6,7 @@ const services = [
   {
     id: '1',
     title: '1-on-1 Coaching In-Person',
-    description: 'Personalized in-person sessions focused on developing social skills, confidence, and authentic connection with women in real-world settings.',
+    description: 'Personalised in-person sessions focused on developing social skills, confidence, and authentic connection with women in real-world settings.',
     imageSrc: 'https://images.unsplash.com/photo-1507537362848-9c7e70b7b5c1?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     link: '/coaching'
   },
@@ -26,7 +26,7 @@ const services = [
   },
   {
     id: '4',
-    title: 'Worldwide Bootcamps',
+    title: 'Worldwide Daygame Bootcamps',
     description: 'Intensive group training experiences in cities around the world, combining classroom learning with real-world application.',
     imageSrc: 'https://images.unsplash.com/photo-1495181941197-70a606546974?q=80&w=2812&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     link: '/coaching'
