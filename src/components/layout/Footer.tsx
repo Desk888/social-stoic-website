@@ -57,19 +57,11 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-stoic-gray/30 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-gray-500">
-            © {year} Social Stoic. All rights reserved. Website designed by <a href="https://github.com/Desk888" className="text-stoic-green-light hover:text-stoic-green transition-colors">Desk888</a>.
-          </p>
-          {/* <div className="mt-4 md:mt-0 flex space-x-6">
-            <a href="#" className="text-gray-500 hover:text-stoic-green-light transition-colors">
-              Terms of Service
-            </a>
-            <a href="#" className="text-gray-500 hover:text-stoic-green-light transition-colors">
-              Privacy Policy
-            </a>
-          </div> */}
-        </div>
+        <div className="border-t border-stoic-gray/30 mt-10 pt-6 flex flex-col md:flex-row justify-center items-center">
+              <p className="text-sm text-gray-500 text-center">
+              © {year} Social Stoic. All rights reserved. Website designed by <a href="https://github.com/Desk888" className="text-stoic-green-light hover:text-stoic-green transition-colors">Desk888</a>.
+              </p>
+            </div>
       </div>
     </footer>
   );
