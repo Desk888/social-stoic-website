@@ -44,7 +44,8 @@ const Navbar = () => {
             Social<span className="text-stoic-green-light">Stoic</span>
           </span> */}
           <img 
-            src="/images/social.png" 
+            src="/images/social.png"
+            loading="lazy"
             alt="Social Stoic Logo" 
             className="h-10 w-auto"
           />
