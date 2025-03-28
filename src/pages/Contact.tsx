@@ -168,11 +168,11 @@ const Contact = () => {
                 },
                 {
                   question: "Do you guarantee results?",
-                  answer: "While we can't guarantee specific outcomes (no ethical coach can), we can guarantee our commitment to providing you with the highest quality coaching and most effective strategies available. Our track record of success speaks for itself, and we work with each client until they achieve their desired results."
+                  answer: "While we can't guarantee specific outcomes (no ethical coach can), we can guarantee our commitment to providing you with the highest quality coaching and effective strategies. Our track record of success speaks for itself, and we work with each client until they achieve their desired results."
                 },
                 {
                   question: "What locations do you offer in-person coaching?",
-                  answer: "We currently offer in-person coaching in New York, Los Angeles, London, and Sydney. For clients in other locations, we offer online coaching or can arrange travel for residential programs (additional fees may apply)."
+                  answer: "We currently offer in-person coaching in most European countries but we are open for coaching overseas. For clients in other locations, we offer online coaching or can arrange travel for residential programs (additional fees may apply)."
                 },
                 {
                   question: "How do I know which program is right for me?",

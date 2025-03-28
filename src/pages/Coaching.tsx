@@ -177,7 +177,7 @@ const Coaching = () => {
                 Success Stories
               </h2>
               <p className="text-lg text-gray-400">
-                Here's what our clients have to say about their transformation
+                Here's what our clients have to say about their experience with our coaching.
               </p>
             </div>
             
