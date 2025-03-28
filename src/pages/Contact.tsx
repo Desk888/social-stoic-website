@@ -15,6 +15,36 @@ const Contact = () => {
       <Navbar />
       
       <main className="page-transition pt-24">
+        {/* Team Image Section - Moved to the top */}
+        <section className="py-16 bg-stoic-black">
+          <div className="container-custom">
+            <div className="max-w-4xl mx-auto">
+              <div className="flex items-center space-x-2 mb-6 justify-center">
+                <div className="h-px w-10 bg-stoic-green"></div>
+                <span className="text-stoic-green uppercase tracking-wider text-sm font-medium">Meet the Team</span>
+                <div className="h-px w-10 bg-stoic-green"></div>
+              </div>
+              
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+                The Faces Behind Social Stoic
+              </h2>
+              
+              <div className="rounded-xl overflow-hidden">
+                <SmoothImage
+                  src="/images/adameddie.jpg"
+                  alt="Eddie and Adam - Social Stoic Team"
+                  className="w-full"
+                  aspectRatio="aspect-[16/9]"
+                />
+              </div>
+              
+              <div className="mt-6 text-center text-gray-300">
+                <p>Eddie (left) and Adam (right) - Founders of Social Stoic</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        
         {/* Contact Hero Section */}
         <section className="py-16 md:py-24 relative">
           <div className="container-custom relative z-10">
@@ -96,36 +126,6 @@ const Contact = () => {
               {/* Form Section - No Background Image */}
               <div className="animation-fade-in-right">
                 <ContactForm />
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        {/* Team Image Section */}
-        <section className="py-16 bg-stoic-black">
-          <div className="container-custom">
-            <div className="max-w-4xl mx-auto">
-              <div className="flex items-center space-x-2 mb-6 justify-center">
-                <div className="h-px w-10 bg-stoic-green"></div>
-                <span className="text-stoic-green uppercase tracking-wider text-sm font-medium">Meet the Team</span>
-                <div className="h-px w-10 bg-stoic-green"></div>
-              </div>
-              
-              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-                The Faces Behind Social Stoic
-              </h2>
-              
-              <div className="rounded-xl overflow-hidden">
-                <SmoothImage
-                  src="/images/adameddie.jpg"
-                  alt="Eddie and Adam - Social Stoic Team"
-                  className="w-full"
-                  aspectRatio="aspect-[16/9]"
-                />
-              </div>
-              
-              <div className="mt-6 text-center text-gray-300">
-                <p>Eddie (left) and Adam (right) - Founders of Social Stoic</p>
               </div>
             </div>
           </div>
