@@ -13,7 +13,8 @@ const Footer = () => {
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
               <img 
-                src="/images/social.png" 
+                src="/images/social.png"
+                loading="lazy"
                 alt="Social Stoic Logo" 
                 className="h-10 w-auto"
               />

@@ -64,6 +64,7 @@ const Contact = () => {
                   <SmoothImage
                     src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&q=80"
                     alt="Background"
+                    loading="lazy"
                     className="w-full h-full object-cover"
                     aspectRatio="aspect-auto"
                   />

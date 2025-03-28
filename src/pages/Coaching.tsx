@@ -73,7 +73,7 @@ const Coaching = () => {
       <Helmet>
                       <meta charSet="utf-8" />
                       <title>Social Stoic | Coaching</title>
-                      <meta name="description" content="Our coaching programs are designed to quickly transform your dating life. From one-on-one sessions to immersive residential experiences, we offer a variety of programs to suit your needs." />
+                      <meta name="description" content="Our coaching programs are designed to quickly transform your dating life. From one-on-one sessions to immersive residential experiences." />
                       <link rel="canonical" href="/coaching" />
       </Helmet>
       <Navbar />
