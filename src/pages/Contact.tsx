@@ -38,7 +38,7 @@ const Contact = () => {
               
               <div className="rounded-xl overflow-hidden">
                 <SmoothImage
-                  src="/images/adameddie.jpg"
+                  src="/images/adameddie.webp"
                   loading="lazy"
                   alt="Eddie and Adam - Social Stoic Team"
                   className="w-full"
