@@ -62,7 +62,7 @@ const Contact = () => {
                 {/* Background Image - Only behind this column */}
                 <div className="absolute inset-0 z-0 opacity-30 rounded-xl overflow-hidden">
                   <SmoothImage
-                    src="https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&q=80"
+                    src=""
                     alt="Background"
                     loading="lazy"
                     className="w-full h-full object-cover"
