@@ -15,7 +15,7 @@ const Contact = () => {
       <Navbar />
       
       <main className="page-transition pt-24">
-        {/* Team Image Section - Moved to the top */}
+        {/* Team Image Section */}
         <section className="py-16 bg-stoic-black">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto">
@@ -34,12 +34,12 @@ const Contact = () => {
                   src="/images/adameddie.jpg"
                   alt="Eddie and Adam - Social Stoic Team"
                   className="w-full"
-                  aspectRatio="aspect-[16/9]"
+                  aspectRatio="aspect-[13/9]"
                 />
               </div>
               
               <div className="mt-6 text-center text-gray-300">
-                <p>Eddie (left) and Adam (right) - Founders of Social Stoic</p>
+                <p>Adam (left) and Eddie (right) - Founders of Social Stoic</p>
               </div>
             </div>
           </div>

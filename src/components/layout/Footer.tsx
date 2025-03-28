@@ -22,7 +22,7 @@ const Footer = () => {
               />
             </Link>
             <p className="text-sm text-gray-400 max-w-xs">
-              Teaching men the art of meeting beautiful women the organic way.
+              Offline Dating for Stoic Men.
             </p>
           </div>
           
