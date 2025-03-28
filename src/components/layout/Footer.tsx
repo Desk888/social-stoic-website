@@ -12,9 +12,6 @@ const Footer = () => {
           {/* Logo & Description */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2">
-              {/* <span className="text-xl font-bold text-white">
-                Social<span className="text-stoic-green-light">Stoic</span>
-              </span> */}
               <img 
                 src="/images/social.png" 
                 alt="Social Stoic Logo" 
