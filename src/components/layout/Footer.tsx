@@ -25,6 +25,17 @@ const Footer = () => {
             <p className="text-sm text-gray-400 max-w-xs">
               Offline Dating for Stoic Men.
             </p>
+            <div className="flex items-center space-x-2">
+                <a 
+                  href="https://www.youtube.com/@SocialStoicYouTube" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-stoic-green-light transition-colors"
+                  aria-label="YouTube Channel"
+                >
+                  <Youtube className="h-6 w-6" />
+                </a>
+              </div>
           </div>
           
           {/* Quick Links */}
@@ -58,17 +69,6 @@ const Footer = () => {
               <Link to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" className="inline-block">
                 <button className="btn-secondary py-2">Book a Consultation</button>
               </Link>
-              <div className="flex items-center space-x-2">
-                <a 
-                  href="https://www.youtube.com/@thesocialstoic" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-stoic-green-light transition-colors"
-                  aria-label="YouTube Channel"
-                >
-                  <Youtube className="h-6 w-6" />
-                </a>
-              </div>
             </div>
           </div>
         </div>

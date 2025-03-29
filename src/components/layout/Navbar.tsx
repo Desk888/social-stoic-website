@@ -76,7 +76,7 @@ const Navbar = () => {
             Book a Consultation
           </Link>
           <a 
-            href="https://www.youtube.com/@thesocialstoic" 
+            href="https://www.youtube.com/@SocialStoicYouTube" 
             target="_blank" 
             rel="noopener noreferrer"
             className="text-white hover:text-stoic-green-light transition-colors"
