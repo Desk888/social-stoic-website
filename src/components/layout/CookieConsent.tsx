@@ -36,12 +36,12 @@ const CookieConsent = () => {
   if (!showConsent) return null;
 
   return (
-    <div className="fixed bottom-4 left-0 right-0 z-50 mx-auto max-w-[calc(100%-2rem)] md:max-w-2xl">
-      <div className="bg-stoic-darkgray rounded-lg border border-stoic-lightgray/20 p-5 shadow-lg backdrop-blur-sm">
-        <div className="flex items-start justify-between mb-4">
+    <div className="fixed bottom-4 left-0 right-0 z-50 mx-auto w-[calc(100%-2rem)] max-w-md md:max-w-2xl">
+      <div className="bg-stoic-darkgray rounded-lg border border-stoic-lightgray/20 p-4 md:p-5 shadow-lg backdrop-blur-sm">
+        <div className="flex items-start justify-between mb-3 md:mb-4">
           <div className="flex items-center space-x-3">
             <Cookie className="h-5 w-5 text-stoic-green" />
-            <h3 className="font-primaryItalic text-lg font-medium text-white">Cookie Consent</h3>
+            <h3 className="font-primaryItalic text-base md:text-lg font-medium text-white">Cookie Consent</h3>
           </div>
           <button
             onClick={declineCookies}
@@ -52,7 +52,7 @@ const CookieConsent = () => {
           </button>
         </div>
         
-        <p className="text-sm text-gray-300 mb-4">
+        <p className="text-xs md:text-sm text-gray-300 mb-4">
           We use cookies to enhance your experience on our website. By continuing to browse, you consent to our use of cookies in accordance with our{" "}
           <a href="/privacy" className="text-stoic-green hover:underline">
             Privacy Policy
@@ -63,14 +63,14 @@ const CookieConsent = () => {
         <div className="flex flex-wrap gap-3">
           <Button 
             onClick={acceptCookies} 
-            className="bg-stoic-green hover:bg-stoic-green-dark text-white"
+            className="bg-stoic-green hover:bg-stoic-green-dark text-white text-sm md:text-base py-2 h-auto"
           >
             Accept All
           </Button>
           <Button 
             onClick={declineCookies} 
             variant="outline" 
-            className="border-stoic-lightgray/30 text-black hover:bg-stoic-gray/50"
+            className="border-stoic-lightgray/30 text-black hover:bg-stoic-gray/50 text-sm md:text-base py-2 h-auto"
           >
             Essential Only
           </Button>

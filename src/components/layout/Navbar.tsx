@@ -24,6 +24,19 @@ const Navbar = () => {
     setIsOpen(false);
   }, [location.pathname]);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
+
   const navLinks = [
     { name: 'Home', path: '/' },
     { name: 'Coaching', path: '/coaching' },
@@ -42,9 +55,6 @@ const Navbar = () => {
     >
       <nav className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2 z-30">
-          {/* <span className="text-xl font-bold text-white whitespace-nowrap">
-            Social<span className="text-stoic-green-light">Stoic</span>
-          </span> */}
           <img 
             src="/images/social.png"
             height={254}
@@ -56,7 +66,7 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex md:items-center md:space-x-8">
+        <div className="hidden md:flex md:items-center md:space-x-6 lg:space-x-8">
           {navLinks.map((link) => (
             <Link
               key={link.path}
@@ -71,7 +81,9 @@ const Navbar = () => {
           ))}
           <Link 
             to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" 
-            className="btn-primary py-2 ml-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary py-2 px-4"
           >
             Book a Consultation
           </Link>
@@ -91,6 +103,7 @@ const Navbar = () => {
           onClick={() => setIsOpen(!isOpen)}
           className="md:hidden z-30 text-white focus:outline-none"
           aria-label="Toggle menu"
+          aria-expanded={isOpen}
         >
           <div className="relative w-6 h-5">
             <span
@@ -117,38 +130,42 @@ const Navbar = () => {
         {/* Mobile Navigation */}
         <div
           className={cn(
-            "fixed inset-0 bg-stoic-black z-20 transform transition-transform duration-300 ease-in-out md:hidden flex flex-col items-center justify-center",
+            "fixed inset-0 bg-stoic-black/95 backdrop-blur-md z-20 transform transition-transform duration-300 ease-in-out md:hidden flex flex-col items-center justify-center",
             isOpen ? "translate-x-0" : "translate-x-full"
           )}
         >
-          <div className="flex flex-col items-center space-y-8">
+          <div className="flex flex-col items-center space-y-6 w-full px-6">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 className={cn(
-                  'text-xl text-white hover:text-stoic-green-light transition-colors',
+                  'text-xl text-white hover:text-stoic-green-light transition-colors w-full text-center py-2',
                   location.pathname === link.path && 'text-stoic-green-light'
                 )}
               >
                 {link.name}
               </Link>
             ))}
-            <Link 
-              to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" 
-              className="btn-primary py-2 w-full text-center mt-6"
-            >
-              Book a Consultation
-            </Link>
-            <a 
-              href="https://www.youtube.com/@thesocialstoic" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-white hover:text-stoic-green-light transition-colors"
-              aria-label="YouTube Channel"
-            >
-              <Youtube className="h-6 w-6" />
-            </a>
+            <div className="pt-4 w-full flex flex-col gap-4">
+              <Link 
+                to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary py-3 w-full text-center"
+              >
+                Book a Consultation
+              </Link>
+              <a 
+                href="https://www.youtube.com/@SocialStoicYouTube" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex justify-center py-2"
+                aria-label="YouTube Channel"
+              >
+                <Youtube className="h-8 w-8 text-white hover:text-stoic-green-light transition-colors" />
+              </a>
+            </div>
           </div>
         </div>
       </nav>
