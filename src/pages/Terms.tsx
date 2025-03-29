@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -23,7 +22,7 @@ const Terms = () => {
         <section className="py-16 md:py-24">
           <div className="container-custom">
             <div className="max-w-4xl mx-auto">
-              <div className="inline-block mb-6">
+              <div className="flex justify-center mb-6">
                 <div className="flex items-center justify-center space-x-2">
                   <div className="h-px w-10 bg-stoic-green"></div>
                   <span className="font-primaryItalic text-stoic-green uppercase tracking-wider text-sm font-medium">Legal</span>
