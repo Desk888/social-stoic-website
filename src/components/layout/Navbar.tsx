@@ -2,6 +2,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { cn } from '@/lib/utils';
+import { Youtube } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -73,6 +75,15 @@ const Navbar = () => {
           >
             Book a Consultation
           </Link>
+          <a 
+            href="https://www.youtube.com/@thesocialstoic" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-white hover:text-stoic-green-light transition-colors"
+            aria-label="YouTube Channel"
+          >
+            <Youtube className="h-6 w-6" />
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -124,11 +135,20 @@ const Navbar = () => {
               </Link>
             ))}
             <Link 
-              to="/contact" 
+              to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" 
               className="btn-primary py-2 w-full text-center mt-6"
             >
               Book a Consultation
             </Link>
+            <a 
+              href="https://www.youtube.com/@thesocialstoic" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white hover:text-stoic-green-light transition-colors"
+              aria-label="YouTube Channel"
+            >
+              <Youtube className="h-6 w-6" />
+            </a>
           </div>
         </div>
       </nav>
