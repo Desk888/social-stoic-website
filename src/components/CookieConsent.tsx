@@ -70,7 +70,7 @@ const CookieConsent = () => {
           <Button 
             onClick={declineCookies} 
             variant="outline" 
-            className="border-stoic-lightgray/30 text-white hover:bg-stoic-gray/50"
+            className="border-stoic-lightgray/30 text-black hover:bg-stoic-gray/50"
           >
             Essential Only
           </Button>
