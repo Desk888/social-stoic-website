@@ -11,7 +11,7 @@ import Contact from "./pages/Contact";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
-import CookieConsent from "./components/CookieConsent";
+import CookieConsent from "./components/layout/CookieConsent";
 
 const queryClient = new QueryClient();
 
