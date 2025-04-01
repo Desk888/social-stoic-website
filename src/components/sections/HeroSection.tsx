@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,7 +8,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ 
-  imageUrl = "/images/adameddie.webp", 
+  imageUrl = "https://images.unsplash.com/photo-1528082687530-3a8fcf190670?q=80&w=3580&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
   title, 
   description 
 }) => {
@@ -20,10 +19,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         <img
           src={imageUrl}
           alt="Hero background"
-          height={3540}
-          width={2360}
           loading="lazy"
-          className="w-full h-full object-cover opacity-85"
+          className="w-full h-full object-cover opacity-90"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50"></div>
       </div>
