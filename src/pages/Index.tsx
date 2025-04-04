@@ -11,7 +11,7 @@ const Index = () => {
     <div className="min-h-screen bg-stoic-black text-white">
       <Helmet>
                       <meta charSet="utf-8" />
-                      <title>Social Stoic | Home</title>
+                      <title>Social Stoic | Daygame Coaching Mastery</title>
                       <meta name="description" content="Unlock the power of organic connections through Daygame. Learn to approach, connect, and build relationships with confidence." />
                       <link rel="canonical" href="/" />
       </Helmet>
