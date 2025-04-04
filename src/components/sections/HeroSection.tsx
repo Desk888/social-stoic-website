@@ -53,7 +53,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
       </div>
       
       {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 animate-bounce hidden md:block">
         <div className="w-8 h-12 border-2 border-white/50 rounded-full flex justify-center">
           <div className="w-1 h-3 bg-white/80 rounded-full mt-2 animate-[slide-in_1.5s_ease-in-out_infinite]"></div>
         </div>
