@@ -24,7 +24,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           src={imageUrl}
           alt="Hero background"
           loading="lazy"
-          className="w-full h-full object-cover md:object-cover object-center opacity-90"
+          className="w-full h-full object-cover md:object-center object-[75%_center] opacity-90"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50"></div>
       </div>
