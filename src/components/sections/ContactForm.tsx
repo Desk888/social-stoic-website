@@ -20,8 +20,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
       if (!formRef.current) {
         throw new Error('Form reference not found');
       }
-
-      // Send the contact form template
+      // contact template
       const contactResult = await emailjs.sendForm(
         'service_67p2ats',
         'template_8wq3jp8',
@@ -31,7 +30,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ className }) => {
 
       console.log('Contact EmailJS Result:', contactResult);
 
-      // Send the auto-reply template
+      // auto-reply template
       const autoReplyResult = await emailjs.sendForm(
         'service_67p2ats',
         'template_6mjwb9o',

@@ -56,7 +56,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </div>
       </div>
       
-      {/* Scroll indicator - only show on non-mobile */}
+      {/* Scroll indicator - only show on desktop */}
       {!isMobile && (
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10 animate-bounce hidden md:block">
           <div className="w-8 h-12 border-2 border-white/50 rounded-full flex justify-center">
