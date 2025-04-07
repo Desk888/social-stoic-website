@@ -38,7 +38,7 @@ const Contact = () => {
               
               <div className="rounded-xl overflow-hidden">
                 <SmoothImage
-                  src="/images/adameddie.webp"
+                  src="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/contact_page_photo.webp"
                   height={4000}
                   width={5000}
                   loading="lazy"

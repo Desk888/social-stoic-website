@@ -56,7 +56,7 @@ const Navbar = () => {
       <nav className="container-custom flex items-center justify-between">
         <Link to="/" className="flex items-center space-x-2 z-30">
           <img 
-            src="/images/social.png"
+            src="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/logo.png"
             height={254}
             width={50}
             loading="lazy"
