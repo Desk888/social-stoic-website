@@ -75,6 +75,28 @@ const Coaching = () => {
                       <title>Social Stoic | Coaching</title>
                       <meta name="description" content="Our coaching programs are designed to quickly transform your dating life. From one-on-one sessions to immersive residential experiences." />
                       <link rel="canonical" href="/coaching" />
+                      <meta property="og:type" content="website" />
+                      <meta property="og:url" content="https://socialstoic.com/coaching" />
+                      <meta property="og:title" content="Social Stoic | Coaching" />
+                      <meta property="og:description" content="Our coaching programs are designed to quickly transform your dating life. From one-on-one sessions to immersive residential experiences." />
+                      <meta property="og:image" content="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/metadata_banner.png" />
+                      {/* Twitter */}
+                      <meta name="twitter:card" content="summary_large_image" />
+                      <meta name="twitter:title" content="Social Stoic | Coaching" />
+                      <meta name="twitter:description" content="Our coaching programs are designed to quickly transform your dating life. From one-on-one sessions to immersive residential experiences." />
+                      <meta name="twitter:image" content="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/metadata_banner.png" />
+                      {/* Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "url": "https://socialstoic.com/coaching",
+              "name": "Social Stoic | Coaching",
+              "description": "Our coaching programs are designed to quickly transform your dating life. From one-on-one sessions to immersive residential experiences."
+            }
+          `}
+        </script>
       </Helmet>
       <Navbar />
       

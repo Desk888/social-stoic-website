@@ -11,9 +11,32 @@ const Index = () => {
     <div className="min-h-screen bg-stoic-black text-white">
       <Helmet>
                       <meta charSet="utf-8" />
-                      <title>Social Stoic | Daygame Coaching Mastery</title>
+                      <title>Social Stoic | Offline Dating For Stoic Men</title>
                       <meta name="description" content="Unlock the power of organic connections through Daygame. Learn to approach, connect, and build relationships with confidence." />
                       <link rel="canonical" href="/" />
+                          {/* Open Graph / Social */}
+                      <meta property="og:type" content="website" />
+                      <meta property="og:url" content="https://socialstoic.com/" />
+                      <meta property="og:title" content="Social Stoic | Offline Dating For Stoic Men" />
+                      <meta property="og:description" content="Unlock the power of organic connections through Daygame. Learn to approach, connect, and build relationships with confidence." />
+                      <meta property="og:image" content="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/metadata_banner.png" />
+                      {/* Twitter */}
+                      <meta name="twitter:card" content="summary_large_image" />
+                      <meta name="twitter:title" content="Social Stoic | Offline Dating For Stoic Men" />
+                      <meta name="twitter:description" content="Unlock the power of organic connections through Daygame. Learn to approach, connect, and build relationships with confidence." />
+                      <meta name="twitter:image" content="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/metadata_banner.png" />
+                      {/* Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "url": "https://socialstoic.com/",
+              "name": "Social Stoic | Offline Dating For Stoic Men",
+              "description": "Unlock the power of organic connections through Daygame. Learn to approach, connect, and build relationships with confidence."
+            }
+          `}
+        </script>
       </Helmet>
       <Navbar />
       

@@ -69,9 +69,32 @@ const Videos = () => {
       <Navbar />
       <Helmet>
                 <meta charSet="utf-8" />
-                <title>Social Stoic | Videos</title>
+                <title>Social Stoic | Video Library</title>
                 <meta name="description" content="Browse through our collection of coaching videos, infields and much more." />
                 <link rel="canonical" href="/videos" />
+                    {/* Open Graph / Social */}
+                    <meta property="og:type" content="website" />
+                      <meta property="og:url" content="https://socialstoic.com/videos" />
+                      <meta property="og:title" content="Social Stoic | Video Library" />
+                      <meta property="og:description" content="Browse through our collection of coaching videos, infields and much more." />
+                      <meta property="og:image" content="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/metadata_banner.png" />
+                      {/* Twitter */}
+                      <meta name="twitter:card" content="summary_large_image" />
+                      <meta name="twitter:title" content="Social Stoic | Video Library" />
+                      <meta name="twitter:description" content="Browse through our collection of coaching videos, infields and much more." />
+                      <meta name="twitter:image" content="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/metadata_banner.png" />
+                      {/* Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "url": "https://socialstoic.com/videos",
+              "name": "Social Stoic | Video Library",
+              "description": "Browse through our collection of coaching videos, infields and much more."
+            }
+          `}
+        </script>
       </Helmet>
       
       <main className="page-transition pt-24">

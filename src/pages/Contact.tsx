@@ -15,9 +15,32 @@ const Contact = () => {
     <div className="min-h-screen bg-stoic-black text-white">
       <Helmet>
                       <meta charSet="utf-8" />
-                      <title>Social Stoic | Contact</title>
+                      <title>Social Stoic | Contact Us</title>
                       <meta name="description" content="Ready to take your social and dating skills to the next level? Fill out the form, and we'll get back to you to discuss how we can help you achieve your goals." />
                       <link rel="canonical" href="/contact" />
+                          {/* Open Graph / Social */}
+                          <meta property="og:type" content="website" />
+                      <meta property="og:url" content="https://socialstoic.com/contact" />
+                      <meta property="og:title" content="Social Stoic | Contact Us" />
+                      <meta property="og:description" content="Ready to take your social and dating skills to the next level? Fill out the form, and we'll get back to you to discuss how we can help you achieve your goals." />
+                      <meta property="og:image" content="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/metadata_banner.png" />
+                      {/* Twitter */}
+                      <meta name="twitter:card" content="summary_large_image" />
+                      <meta name="twitter:title" content="Social Stoic | Contact Us" />
+                      <meta name="twitter:description" content="Ready to take your social and dating skills to the next level? Fill out the form, and we'll get back to you to discuss how we can help you achieve your goals." />
+                      <meta name="twitter:image" content="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/metadata_banner.png" />
+                      {/* Structured Data */}
+        <script type="application/ld+json">
+          {`
+            {
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "url": "https://socialstoic.com/contact",
+              "name": "Social Stoic | Contact Us",
+              "description": "Ready to take your social and dating skills to the next level? Fill out the form, and we'll get back to you to discuss how we can help you achieve your goals."
+            }
+          `}
+        </script>
       </Helmet>
       <Navbar />
       
