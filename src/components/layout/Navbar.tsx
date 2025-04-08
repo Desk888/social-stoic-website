@@ -83,7 +83,7 @@ const Navbar = () => {
             to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" 
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-primary py-2 px-4"
+            className="btn-primary text-black py-2 px-4"
           >
             Book a Consultation
           </Link>
@@ -152,7 +152,7 @@ const Navbar = () => {
                 to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-primary py-3 w-full text-center"
+                className="btn-primary text-black py-3 w-full text-center"
               >
                 Book a Consultation
               </Link>

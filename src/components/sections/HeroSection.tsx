@@ -46,7 +46,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <Link to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" className="btn-primary">
+            <Link to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" className="btn-primary text-black">
               Book a Consultation
             </Link>
             <Link to="/coaching" className="btn-secondary">

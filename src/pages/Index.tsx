@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
@@ -69,7 +70,7 @@ const Index = () => {
                 Take the first step towards building authentic connections with women through our coaching programs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" className="btn-primary">
+                <Link to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" className="btn-primary text-black">
                   Book a Consultation
                 </Link>
                 <Link to="/coaching" className="btn-secondary">

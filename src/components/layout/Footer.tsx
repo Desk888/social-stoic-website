@@ -67,7 +67,7 @@ const Footer = () => {
             <h4 className="font-primaryItalic text-lg font-semibold">Contact</h4>
             <div className="flex flex-col space-y-3">
               <Link to="https://calendly.com/thesocialstoic/coachingapplicationcall?month=2025-03" className="inline-block">
-                <button className="btn-secondary py-2">Book a Consultation</button>
+                <button className="btn-secondary text-stoic-green py-2">Book a Consultation</button>
               </Link>
             </div>
           </div>
