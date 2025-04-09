@@ -1,69 +1,52 @@
-# Welcome to your Lovable project
+# Social Stoic Website Project
 
-## Project info
+## Project Overview
 
-**URL**: https://lovable.dev/projects/d44a022d-1527-4b83-aaac-ab3b813d3466
+This is a React/TypeScript web application for "Social Stoic," a coaching service focused on helping men with offline dating (specifically "Daygame"). The site serves as both a marketing platform and information resource for potential clients interested in dating coaching services.
 
-## How can I edit this code?
+## Technical Stack
 
-There are several ways of editing your application.
+* **Framework**: React with TypeScript
+* **Build Tool**: Vite
+* **Styling**: Tailwind CSS with custom animations and theming
+* **UI Components**: shadcn-ui (based on Radix UI)
+* **Routing**: React Router
+* **Form Handling**: React Hook Form with EmailJS integration
+* **State Management**: React Query for data fetching
 
-**Use Lovable**
+## Site Structure
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d44a022d-1527-4b83-aaac-ab3b813d3466) and start prompting.
+1. **Homepage**: Features a hero section with a strong value proposition, services overview, and call-to-action.
+2. **Coaching Page**: Detailed information about four coaching services:
+   * 1-on-1 Coaching In-Person
+   * 1-on-1 Coaching Online
+   * Residentials (immersive multi-day programs)
+   * Worldwide Daygame Bootcamps
+3. **Videos Page**: Showcases YouTube content with embedded videos and thumbnails.
+4. **Contact Page**: Contains a contact form, team information, and FAQs.
+5. **Legal Pages**: Terms of Service and Privacy Policy.
 
-Changes made via Lovable will be committed automatically to this repo.
+## Key Features
 
-**Use your preferred IDE**
+* **Responsive Design**: Fully responsive with mobile-first approach
+* **Modern UI**: Dark theme with green accent colors and smooth animations
+* **Video Integration**: YouTube video embedding with modal player
+* **Contact System**: Form submission with EmailJS for both contact messages and auto-replies
+* **Cookie Consent**: GDPR-compliant cookie consent management
+* **Analytics**: Google Tag Manager integration
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Brand Identity
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+* **Color Scheme**: Dark background (#000000, #111111) with green accents (#04B66C)
+* **Typography**: Inter for general text, Decalotype for headings and emphasis
+* **Positioning**: "Offline Dating for Stoic Men" - focuses on authentic connections through daygame
+* **Target Audience**: Men looking to improve their dating skills through approaching women in public settings
 
-Follow these steps:
+## Project Organization
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+* **Component Structure**: Well-organized with layout, sections, and UI components
+* **Code Quality**: TypeScript for type safety, modular components
+* **Asset Management**: Mix of local assets and CDN-hosted images
+* **Performance Considerations**: Lazy loading images, optimized animations
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/d44a022d-1527-4b83-aaac-ab3b813d3466) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+This project represents a professional coaching business website with strong branding, clear service offerings, and effective calls-to-action. The technical implementation follows modern React best practices with a focus on performance and user experience.
