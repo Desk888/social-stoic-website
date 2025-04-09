@@ -2,6 +2,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useIsMobile } from '@/hooks/use-mobile';
+import SmoothImage from '@/components/ui/SmoothImage';
+import { generateSrcSet, generateSizes } from '@/lib/image';
 
 interface HeroSectionProps {
   imageUrl?: string;
@@ -10,7 +12,7 @@ interface HeroSectionProps {
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({ 
-  imageUrl = "https://images.unsplash.com/photo-1528082687530-3a8fcf190670?q=80&w=3580&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+  imageUrl = "https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/socialstoichero.webp", 
   title, 
   description 
 }) => {
@@ -20,11 +22,20 @@ const HeroSection: React.FC<HeroSectionProps> = ({
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background image and overlay */}
       <div className="absolute inset-0 z-0">
-        <img
+        <SmoothImage
           src={imageUrl}
           alt="Hero background"
-          loading="lazy"
+          priority={true} // Hero image should load immediately
+          srcSet={generateSrcSet(imageUrl)}
+          sizes={generateSizes([
+            { minWidth: 1536, size: '1536px' },
+            { minWidth: 1280, size: '1280px' },
+            { minWidth: 1024, size: '1024px' },
+            { minWidth: 768, size: '768px' },
+            { size: '100vw' }
+          ])}
           className="w-full h-full object-cover md:object-center object-[75%_center] opacity-90"
+          aspectRatio="aspect-[16/9]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/70 to-black/50"></div>
       </div>

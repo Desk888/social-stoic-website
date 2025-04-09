@@ -6,6 +6,7 @@ import HeroSection from '@/components/sections/HeroSection';
 import ServicesSection from '@/components/sections/ServicesSection';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import { generateOrganizationSchema } from '@/lib/structuredData';
 
 const Index = () => {
   return (
@@ -28,15 +29,25 @@ const Index = () => {
                       <meta name="twitter:image" content="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/metadata_banner.png" />
                       {/* Structured Data */}
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "url": "https://socialstoic.com/",
-              "name": "Social Stoic | Offline Dating For Stoic Men",
-              "description": "Unlock the power of organic connections through Daygame. Learn to approach, connect, and build relationships with confidence."
-            }
-          `}
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "url": "https://socialstoic.com/",
+            "name": "Social Stoic | Offline Dating For Stoic Men",
+            "description": "Unlock the power of organic connections through Daygame. Learn to approach, connect, and build relationships with confidence."
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(generateOrganizationSchema({
+            name: 'Social Stoic',
+            description: 'Professional dating and social skills coaching for men.',
+            url: 'https://socialstoic.com',
+            logo: 'https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/logo.png',
+            sameAs: [
+              'https://www.instagram.com/thesocialstoic',
+              'https://www.youtube.com/@thesocialstoic'
+            ]
+          }))}
         </script>
       </Helmet>
       <Navbar />

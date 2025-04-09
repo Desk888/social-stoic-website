@@ -4,6 +4,8 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import BreadcrumbContainer from '@/components/layout/BreadcrumbContainer';
+import { generateOrganizationSchema, generateSchemaScript } from '@/lib/structuredData';
 
 const coachingServices = [
   {
@@ -63,6 +65,33 @@ const coachingServices = [
   }
 ];
 
+const testimonials = [
+  {
+    id: '1',
+    rating: 5,
+    text: 'I went from being anxious about approaching women in public settings to being able to start a conversation anywhere and get numbers and dates. Adam and Eddie\'s guidance was invaluable.',
+    client: 'Aron',
+    designation: 'Student',
+    initial: 'A'
+  },
+  {
+    id: '2',
+    rating: 5,
+    text: 'Adam\'s coaching not only helped me get over approach anxiety, he also helped me improve my fashion and presence which not only helped me get reactions when approaching but also increase my personal confidence.',
+    client: 'Raj',
+    designation: 'Student',
+    initial: 'J'
+  },
+  {
+    id: '3',
+    rating: 5,
+    text: 'I loved their youtube content from day one, combining what I learned through their videos with personal 1on1 coaching significantly transformed my dating and social life.',
+    client: 'Jose',
+    designation: 'Student',
+    initial: 'J'
+  }
+];
+
 const Coaching = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -71,11 +100,23 @@ const Coaching = () => {
   return (
     <div className="min-h-screen bg-stoic-black text-white">
       <Helmet>
-                      <meta charSet="utf-8" />
-                      <title>Social Stoic | Coaching</title>
-                      <meta name="description" content="Our coaching programs are designed to quickly transform your dating life. From one-on-one sessions to immersive residential experiences." />
-                      <link rel="canonical" href="/coaching" />
-                      <meta property="og:type" content="website" />
+        <meta charSet="utf-8" />
+        <title>Social Stoic | Coaching</title>
+        <meta name="description" content="Our coaching programs are designed to quickly transform your dating life. From one-on-one sessions to immersive residential experiences." />
+        <link rel="canonical" href="/coaching" />
+        <meta property="og:type" content="website" />
+        <script type="application/ld+json">
+          {JSON.stringify(generateOrganizationSchema({
+            name: 'Social Stoic',
+            description: 'Professional dating and social skills coaching for men.',
+            url: 'https://socialstoic.com',
+            logo: 'https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/logo.png',
+            sameAs: [
+              'https://www.instagram.com/thesocialstoic',
+              'https://www.youtube.com/@thesocialstoic'
+            ]
+          }))}
+        </script>
                       <meta property="og:url" content="https://socialstoic.com/coaching" />
                       <meta property="og:title" content="Social Stoic | Coaching" />
                       <meta property="og:description" content="Our coaching programs are designed to quickly transform your dating life. From one-on-one sessions to immersive residential experiences." />
@@ -101,6 +142,7 @@ const Coaching = () => {
       <Navbar />
       
       <main className="page-transition pt-24">
+        <BreadcrumbContainer />
         {/* Hero Section */}
         <section className="relative py-20 overflow-hidden">
           <div className="absolute inset-0 z-0">
@@ -204,27 +246,29 @@ const Coaching = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[1, 2, 3].map((i) => (
-                <div key={i} className="bg-stoic-gray/30 p-6 rounded-xl border border-stoic-gray/20">
-                  <div className="flex items-center space-x-1 text-stoic-green mb-4">
-                    {[1, 2, 3, 4, 5].map((star) => (
-                      <svg key={star} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                    ))}
+              {testimonials.map((testimonial, index) => (
+                <div key={index} className="bg-stoic-gray/30 p-6 rounded-xl border border-stoic-gray/20 flex flex-col justify-between h-full">
+                  <div>
+                    <div className="flex items-center space-x-1 text-stoic-green mb-4">
+                      {[...Array(testimonial.rating)].map((_, starIndex) => (
+                        <svg key={starIndex} xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                        </svg>
+                      ))}
+                    </div>
+                    
+                    <p className="text-gray-300 mb-6">
+                      {testimonial.text}
+                    </p>
                   </div>
                   
-                  <p className="text-gray-300 mb-6">
-                    "Working with Social Stoic completely transformed my dating life. I went from being anxious about approaching women to having genuine confidence in social situations. The coaches provided practical advice and techniques that actually work."
-                  </p>
-                  
-                  <div className="flex items-center">
+                  <div className="flex items-center mt-auto">
                     <div className="w-12 h-12 bg-stoic-green rounded-full mr-4 flex items-center justify-center text-white font-bold">
-                      {String.fromCharCode(64 + i)}
+                      {testimonial.initial}
                     </div>
                     <div>
-                      <h4 className="font-medium">Client {i}</h4>
-                      <p className="text-sm text-gray-400">Program Graduate</p>
+                      <h4 className="font-medium">{testimonial.client}</h4>
+                      <p className="text-sm text-gray-400">{testimonial.designation}</p>
                     </div>
                   </div>
                 </div>

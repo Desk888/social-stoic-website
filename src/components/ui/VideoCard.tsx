@@ -3,6 +3,8 @@ import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { extractYouTubeVideoId, getYouTubeThumbnailUrl } from '@/lib/youtube';
 import { Play } from 'lucide-react';
+import SmoothImage from './SmoothImage';
+import { generateSrcSet, generateSizes } from '@/lib/image';
 
 interface VideoCardProps {
   title: string;
@@ -42,10 +44,17 @@ const VideoCard: React.FC<VideoCardProps> = ({
         className="relative overflow-hidden w-full aspect-video cursor-pointer"
         onClick={handleClick}
       >
-        <img
+        <SmoothImage
           src={imageError ? fallbackThumbnail : thumbnailUrl}
           alt={title}
+          srcSet={generateSrcSet(imageError ? fallbackThumbnail : thumbnailUrl)}
+          sizes={generateSizes([
+            { minWidth: 1024, size: '33vw' }, // 3 columns on large screens
+            { minWidth: 768, size: '50vw' }, // 2 columns on medium screens
+            { size: '100vw' } // Full width on mobile
+          ])}
           className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+          aspectRatio="aspect-video"
           onError={() => setImageError(true)}
         />
         <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/50 transition-all duration-300">

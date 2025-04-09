@@ -7,6 +7,8 @@ import { Link } from 'react-router-dom';
 import { extractYouTubeVideoId, getYouTubeEmbedUrl } from '@/lib/youtube';
 import { X } from 'lucide-react';
 import { Helmet } from 'react-helmet';
+import BreadcrumbContainer from '@/components/layout/BreadcrumbContainer';
+import { generateOrganizationSchema } from '@/lib/structuredData';
 
 // Real YouTube video data
 const videos = [
@@ -68,36 +70,62 @@ const Videos = () => {
     <div className="min-h-screen bg-stoic-black text-white">
       <Navbar />
       <Helmet>
-                <meta charSet="utf-8" />
-                <title>Social Stoic | Video Library</title>
-                <meta name="description" content="Browse through our collection of coaching videos, infields and much more." />
-                <link rel="canonical" href="/videos" />
-                    {/* Open Graph / Social */}
-                    <meta property="og:type" content="website" />
-                      <meta property="og:url" content="https://socialstoic.com/videos" />
-                      <meta property="og:title" content="Social Stoic | Video Library" />
-                      <meta property="og:description" content="Browse through our collection of coaching videos, infields and much more." />
-                      <meta property="og:image" content="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/metadata_banner.png" />
-                      {/* Twitter */}
-                      <meta name="twitter:card" content="summary_large_image" />
-                      <meta name="twitter:title" content="Social Stoic | Video Library" />
-                      <meta name="twitter:description" content="Browse through our collection of coaching videos, infields and much more." />
-                      <meta name="twitter:image" content="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/metadata_banner.png" />
-                      {/* Structured Data */}
+        <meta charSet="utf-8" />
+        <title>Social Stoic | Video Library</title>
+        <meta name="description" content="Browse through our collection of coaching videos, infields and much more." />
+        <link rel="canonical" href="/videos" />
+        {/* Open Graph / Social */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://socialstoic.com/videos" />
+        <meta property="og:title" content="Social Stoic | Video Library" />
+        <meta property="og:description" content="Browse through our collection of coaching videos, infields and much more." />
+        <meta property="og:image" content="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/metadata_banner.png" />
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Social Stoic | Video Library" />
+        <meta name="twitter:description" content="Browse through our collection of coaching videos, infields and much more." />
+        <meta name="twitter:image" content="https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/metadata_banner.png" />
+        {/* Structured Data */}
         <script type="application/ld+json">
-          {`
-            {
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              "url": "https://socialstoic.com/videos",
-              "name": "Social Stoic | Video Library",
-              "description": "Browse through our collection of coaching videos, infields and much more."
-            }
-          `}
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": videos.map((video, index) => ({
+              "@type": "VideoObject",
+              "position": index + 1,
+              "name": video.title,
+              "description": video.title,
+              "thumbnailUrl": `https://img.youtube.com/vi/${extractYouTubeVideoId(video.videoUrl)}/maxresdefault.jpg`,
+              "uploadDate": "2024-01-01",
+              "contentUrl": video.videoUrl,
+              "embedUrl": getYouTubeEmbedUrl(extractYouTubeVideoId(video.videoUrl) || ''),
+              "publisher": {
+                "@type": "Organization",
+                "name": "Social Stoic",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/logo.png"
+                }
+              }
+            }))
+          })}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(generateOrganizationSchema({
+            name: 'Social Stoic',
+            description: 'Professional dating and social skills coaching for men.',
+            url: 'https://socialstoic.com',
+            logo: 'https://socialstoic-assets-cdn.s3.eu-west-2.amazonaws.com/logo.png',
+            sameAs: [
+              'https://www.instagram.com/thesocialstoic',
+              'https://www.youtube.com/@thesocialstoic'
+            ]
+          }))}
         </script>
       </Helmet>
       
       <main className="page-transition pt-24">
+        <BreadcrumbContainer />
         {/* Hero Section */}
         <section className="py-16 md:py-24">
           <div className="container-custom">

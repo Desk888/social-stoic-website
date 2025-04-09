@@ -2,6 +2,8 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
+import SmoothImage from './SmoothImage';
+import { generateSrcSet, generateSizes } from '@/lib/image';
 
 interface ServiceCardProps {
   title: string;
@@ -27,13 +29,17 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
     >
       <div className="relative overflow-hidden w-full aspect-[4/3]">
         <div className="absolute inset-0 bg-gradient-to-t from-stoic-black to-transparent z-10 opacity-50"></div>
-        <img
+        <SmoothImage
           src={imageSrc}
           alt={title}
-          loading="lazy"
-          height={3540}
-          width={2360}
+          srcSet={generateSrcSet(imageSrc)}
+          sizes={generateSizes([
+            { minWidth: 1024, size: '25vw' }, // 4 columns on large screens
+            { minWidth: 768, size: '50vw' }, // 2 columns on medium screens
+            { size: '100vw' } // Full width on mobile
+          ])}
           className="w-full h-full object-cover transition-transform duration-700 ease-in-out group-hover:scale-105"
+          aspectRatio="aspect-[4/3]"
         />
       </div>
       
