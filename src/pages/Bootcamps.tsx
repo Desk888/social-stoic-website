@@ -21,6 +21,9 @@ const Bootcamps = () => {
     { city: 'Warsaw', country: 'Poland', dates: '26–27 July', year: '2025', flag: '🇵🇱' },
   ];
 
+  // Get the next bootcamp (first in the list, as they're already in chronological order)
+  const nextBootcamp = bootcampEvents[0];
+
   // Generate schema for SEO
   const orgSchema = generateOrganizationSchema({
     name: 'Social Stoic',
@@ -62,9 +65,38 @@ const Bootcamps = () => {
             title="Worldwide Bootcamps" 
             description="Immersive weekend experiences to transform your dating life across major European cities. Learn practical skills with expert guidance in real-world environments."
           />
+          
+          {/* Next bootcamp card floating over the hero section */}
+          <div className="container-custom relative -mt-32 z-20 mb-8">
+            <Card className="bg-stoic-black/90 border border-stoic-green/50 shadow-xl shadow-stoic-green/10 backdrop-blur-sm max-w-sm mx-auto transform hover:scale-105 transition-all duration-300">
+              <CardHeader>
+                <CardTitle className="text-center font-primaryItalic text-stoic-green">
+                  Next Bootcamp
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex items-center justify-center gap-3 mb-4">
+                  <span className="text-3xl" aria-label={`Flag of ${nextBootcamp.country}`}>{nextBootcamp.flag}</span>
+                  <h3 className="text-xl font-semibold text-white">{nextBootcamp.city}, {nextBootcamp.country}</h3>
+                </div>
+                <div className="flex items-center justify-center gap-3 text-gray-300 mb-6">
+                  <Calendar className="h-5 w-5 text-stoic-green" />
+                  <span>{nextBootcamp.dates}, {nextBootcamp.year}</span>
+                </div>
+                <Link 
+                  to="https://calendly.com/thesocialstoic/bootcamp-application-call?month=2025-05" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary text-black py-2 px-6 block text-center"
+                >
+                  Apply Now
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
 
           <BreadcrumbContainer
-            items={[
+            links={[
               { title: 'Home', href: '/' },
               { title: 'Bootcamps', href: '/bootcamps' },
             ]}
