@@ -6,19 +6,19 @@ import Footer from '@/components/layout/Footer';
 import HeroSection from '@/components/sections/HeroSection';
 import BreadcrumbContainer from '@/components/layout/BreadcrumbContainer';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
-import { MapPin, Calendar } from 'lucide-react';
+import { MapPin, Calendar, Flag } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { generateOrganizationSchema, generateSchemaScript } from '@/lib/structuredData';
 
 const Bootcamps = () => {
   const bootcampEvents = [
-    { city: 'Munich', country: 'Germany', dates: '31 May–1 June', year: '2025' },
-    { city: 'Krakow', country: 'Poland', dates: '7–8 June', year: '2025' },
-    { city: 'Prague', country: 'Czech Republic', dates: '14–15 June', year: '2025' },
-    { city: 'Belgrade', country: 'Serbia', dates: '21–22 June', year: '2025' },
-    { city: 'London', country: 'UK', dates: '28–29 June', year: '2025' },
-    { city: 'Prague', country: 'Czech Republic', dates: '12–13 July', year: '2025' },
-    { city: 'Warsaw', country: 'Poland', dates: '26–27 July', year: '2025' },
+    { city: 'Munich', country: 'Germany', dates: '31 May–1 June', year: '2025', flag: '🇩🇪' },
+    { city: 'Krakow', country: 'Poland', dates: '7–8 June', year: '2025', flag: '🇵🇱' },
+    { city: 'Prague', country: 'Czech Republic', dates: '14–15 June', year: '2025', flag: '🇨🇿' },
+    { city: 'Belgrade', country: 'Serbia', dates: '21–22 June', year: '2025', flag: '🇷🇸' },
+    { city: 'London', country: 'UK', dates: '28–29 June', year: '2025', flag: '🇬🇧' },
+    { city: 'Prague', country: 'Czech Republic', dates: '12–13 July', year: '2025', flag: '🇨🇿' },
+    { city: 'Warsaw', country: 'Poland', dates: '26–27 July', year: '2025', flag: '🇵🇱' },
   ];
 
   // Generate schema for SEO
@@ -92,7 +92,7 @@ const Bootcamps = () => {
                   <Card key={index} className="bg-stoic-black/60 border border-stoic-gray hover:border-stoic-green/60 transition-all duration-300">
                     <CardHeader>
                       <CardTitle className="flex items-center gap-3 font-primaryItalic text-stoic-green-light">
-                        <MapPin className="h-5 w-5" />
+                        <span className="text-2xl" aria-label={`Flag of ${event.country}`}>{event.flag}</span>
                         {event.city}, {event.country}
                       </CardTitle>
                     </CardHeader>
