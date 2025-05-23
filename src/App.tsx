@@ -14,6 +14,7 @@ const Videos = lazy(() => import('./pages/Videos'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Terms = lazy(() => import('./pages/Terms'));
 const Privacy = lazy(() => import('./pages/Privacy'));
+const Bootcamps = lazy(() => import('./pages/Bootcamps'));
 const NotFound = lazy(() => import('./pages/NotFound'));
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/coaching" element={<Coaching />} />
             <Route path="/videos" element={<Videos />} />
+            <Route path="/bootcamps" element={<Bootcamps />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/terms" element={<Terms />} />
             <Route path="/privacy" element={<Privacy />} />

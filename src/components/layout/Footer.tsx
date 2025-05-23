@@ -44,6 +44,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-400 hover:text-stoic-green-light transition-colors">Home</Link></li>
               <li><Link to="/coaching" className="text-gray-400 hover:text-stoic-green-light transition-colors">Coaching</Link></li>
+              <li><Link to="/bootcamps" className="text-gray-400 hover:text-stoic-green-light transition-colors">Bootcamps</Link></li>
               <li><Link to="/videos" className="text-gray-400 hover:text-stoic-green-light transition-colors">Videos</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-stoic-green-light transition-colors">Contact</Link></li>
               <li><Link to="/terms" className="text-gray-400 hover:text-stoic-green-light transition-colors">Terms & Conditions</Link></li>
@@ -57,8 +58,8 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/coaching" className="text-gray-400 hover:text-stoic-green-light transition-colors">1-on-1 Coaching In-Person</Link></li>
               <li><Link to="/coaching" className="text-gray-400 hover:text-stoic-green-light transition-colors">1-on-1 Coaching Online</Link></li>
+              <li><Link to="/bootcamps" className="text-gray-400 hover:text-stoic-green-light transition-colors">Worldwide Bootcamps</Link></li>
               <li><Link to="/coaching" className="text-gray-400 hover:text-stoic-green-light transition-colors">Residentials</Link></li>
-              <li><Link to="/coaching" className="text-gray-400 hover:text-stoic-green-light transition-colors">Worldwide Bootcamps</Link></li>
             </ul>
           </div>
           
