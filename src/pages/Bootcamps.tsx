@@ -59,7 +59,7 @@ const Bootcamps = () => {
         <main className="flex-grow">
           <HeroSection 
             imageUrl="https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
-            title="Worldwide Bootcamps" 
+            title="Bootcamps" 
             description="Immersive weekend experiences to transform your dating life across major European cities. Learn practical skills with expert guidance in real-world environments."
           />
 
